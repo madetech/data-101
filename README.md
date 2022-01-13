@@ -9,13 +9,13 @@
 
 ### Core learning path
 
-1. :snake: [Python, pip, pyenv](core/Python.md)
-2. :panda_face: [Pandas - introduction to data loading & transformations](core/Pandas.md) 
-3. :sparkler: [Spark - Putting the **big** in *big data*](core/Spark.md)
+1. :snake: [Python, pip, pyenv](modules/core/Python.md)
+2. :panda_face: [Pandas - introduction to data loading & transformations](modules/core/Pandas.md) 
+3. :sparkler: [Spark - Putting the **big** in *big data*](modules/core/Spark.md)
 
 
 ### Supplementary learning modules
 
-- :scream_cat: [SQL](supplementary/SQL.md)
-- :computer: [Terraform](supplementary/Terraform.md)
-- :floppy_disk: [Databases](supplementary/Database.md)
+- :scream_cat: [SQL](modules/supplementary/SQL.md)
+- :computer: [Terraform](modules/supplementary/Terraform.md)
+- :floppy_disk: [Databases](modules/supplementary/Database.md)
