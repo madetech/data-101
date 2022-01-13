@@ -1,6 +1,8 @@
 # Pyspark the basics
 
-For the coming excercises please either set up a notebook on a databricks workspace, python environment with pyspark enabled or databricks connect.
+To run this excercise you should be able to use your local python environment with pyspark enabled. 
+
+You could also set up a notebook on a databricks workspace or use [databricks connect](https://docs.databricks.com/dev-tools/databricks-connect.html).
 
 Please download flight-data from the [Spark-The-Definitive-Guide repo](https://github.com/databricks/Spark-The-Definitive-Guide/tree/master/data/flight-data) and put it somewhere that is accessible in your pyspark environemnt. 
 
