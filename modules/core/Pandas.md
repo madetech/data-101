@@ -11,7 +11,10 @@ Nope, not the fluffy East Asian Bear - the Python package.
 For our purposes pandas offers a simple introduction to pragmatic data analysis. You can utilise pandas as a sort of pythonic spreadsheet.
 
 ## Installation
-First you will want to install it: `pip install pandas` <br>
+First you will want to install it: 
+```shell
+pip install pandas
+```
 Yep, that's it. Told you it was simple.
 
 
