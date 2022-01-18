@@ -6,7 +6,7 @@ When working on a python project it is beneficial to use virtual environments to
 
 To manage the python versions on your machine locally then install ‘pyenv’ which is a Python version management system. Using pyenv you can set global and local versions of what Python version you would like to run.
 
-Below I am going to outline how you would run up a virtual environment if you installed using Python3 (if you are using Python 2 then please refer to this documentation: [virtualenv][https://packaging.python.org/en/latest/key_projects/#virtualenv] but mostly it is swapping venv to virtualenv).   
+Below I am going to outline how you would run up a virtual environment if you installed using Python3 (if you are using Python 2 then please refer to this documentation: [virtualenv](https://packaging.python.org/en/latest/key_projects/#virtualenv) but mostly it is swapping venv to virtualenv).   
 
 To begin please run:
 
@@ -46,9 +46,9 @@ Pipenv & Poetry
 
 As well as the above ways to create virtual environments there are two other tools that are popular in setting up python environments at MadeTech: 
 
-[Pipenv][https://pypi.org/project/pipenv/]
+[Pipenv](https://pypi.org/project/pipenv/)
 
-[Poetry][https://python-poetry.org/]
+[Poetry](https://python-poetry.org/)
 
 Poetry in particular has gained popularity due to being able to spin up clean encapsulated environments, easy packaging and quality checking.
 Delta Setup
@@ -75,11 +75,11 @@ builder = SparkSession.builder.appName("MyApp").config("spark.sql.extensions", "
  spark = configure_spark_with_delta_pip(builder).getOrCreate()
 ```
 
-Please click [here][https://docs.delta.io/latest/quick-start.html#set-up-project] for more information
+Please click [here](https://docs.delta.io/latest/quick-start.html#set-up-project) for more information
 
 
 Useful links:
 
-[Virutal environments a primer][https://realpython.com/python-virtual-environments-a-primer/]
+[Virutal environments a primer](https://realpython.com/python-virtual-environments-a-primer/)
 
-[Manage projects with pipenv and pyenv][https://www.rootstrap.com/blog/how-to-manage-your-python-projects-with-pipenv-pyenv/]
+[Manage projects with pipenv and pyenv](https://www.rootstrap.com/blog/how-to-manage-your-python-projects-with-pipenv-pyenv/)
