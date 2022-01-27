@@ -19,14 +19,12 @@ Authored by Stefanie Molin [(LinkedIn)](https://www.linkedin.com/in/stefanie-mol
 
 This repo primarily serves as an accompanyment to her handbook: [Hands-On Data Analysis with Pandas ](https://www.amazon.co.uk/Hands-Data-Analysis-Pandas-visualization-ebook/dp/B08R67H7F5) but can be utilised in a standalone fashion.
 
-Stefanie has detailed documentation on how to use this guide, I'd recommend using this for a full introduction to pandas. For those of you looking for the tldr. Outlined below is a list of key notebooks found in this extensive guide.
+Stefanie has detailed documentation on how to use this guide, I'd recommend using this for a full introduction to pandas. For those of you looking for the tldr, outlined below is a list of essential notebooks for learning pandas found in this extensive guide.
 
-
+## TLDR Notebooks
 
 | Topic                                                                                                                                                                     | Description |
-| -----------                                                                                                                                                               | ----------- | 
-| [Introduction to Data Analaysis](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_01/introduction_to_data_analysis.ipynb)       | Summary of fundamental Data Analaysis concepts including Statistics, Distributions, Relationships and Forecasting. |
-| [Introduction to python](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_01/python_101.ipynb)                                  | A great crash course into Python for those that need a refresher or an introduction.            |
+| -----------                                                                                                                                                               | -----------            |
 | [Pandas Data Structures](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_02/1-pandas_data_structures.ipynb)                    | A look into available Data Structures in Pandas, namely Series, Index and DataFrame.      |
 | [Creating Dataframes](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_02/2-creating_dataframes.ipynb)                          | Dataframes form the core of pragmatic data analysis. This serves as a great introduction.         |
 | [Inspecting Dataframes](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_02/4-inspecting_dataframes.ipynb) | What does my Dataframe look like? How many Columns? Max? Min? Look no further! | 
@@ -34,4 +32,13 @@ Stefanie has detailed documentation on how to use this guide, I'd recommend usin
 | [Querying and Merging](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_04/1-querying_and_merging.ipynb) | Want to incorporate multiple datasets? Not sure of the type of Join you need? |
 | [Aggregations](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_04/3-aggregations.ipynb) | Min, Max, Median, Count etc. |
 | [Visualisations with Pandas](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_05/2-plotting_with_pandas.ipynb) | Tired of looking at tables? Try plotting instead utilising [Matplotlib](https://matplotlib.org/) - a popular graphing library. | 
+
+
+## Supplementary Notebooks
+For some extra reading, below is a list of supplementary reading. Not neccessary for learning Pandas, however there is some great material here well worth a look!
+
+| Topic                                                                                                                                                                     | Description |
+| -----------                                                                                                                                                               | ----------- | 
+| [Introduction to Data Analaysis](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_01/introduction_to_data_analysis.ipynb)       | Summary of fundamental Data Analaysis concepts including Statistics, Distributions, Relationships and Forecasting. |
+| [Introduction to python](https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition/blob/master/ch_01/python_101.ipynb)                                  | A great crash course into Python for those that need a refresher or an introduction.
 
