@@ -8,7 +8,7 @@ Nope, not the fluffy East Asian Bear - the Python package.
 > Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis/manipulation tool available in any language.
 -*[pandas overview](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html)*
 
-For our purposes pandas offers a simple introduction to pragmatic data analysis. You can utilise pandas as a sort of pythonic spreadsheet.
+For our purposes pandas offers a simple introduction to pragmatic data analysis. Panda is a software library for Python offering tools for data manipulation and analysis. You can utilise it a a sort of pythonic spreadsheet!
 
 
 A fantastic pandas workshop can be found here: https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition
