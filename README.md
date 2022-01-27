@@ -6,6 +6,7 @@
 - Supplementary learning modules  to be used for broadening knowledge, not strictly necessary but highly relevant and useful.
 
 *Insert fancy miro diagram dipicting the learning pathway*
+![Learning pathway diagram](https://github.com/madetech/data-101/blob/main/images/learningpathway.png?raw=true)
 
 ### Core learning path
 
