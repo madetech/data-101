@@ -1,6 +1,6 @@
 # Tutorial: Setting up your Python environment
 
-# Simple setup:
+## Simple setup:
 
 When working on a python project it is beneficial to use virtual environments to ensure that all developers on the project have the same dependencies and are able to spin up an environment quickly.
 
@@ -10,7 +10,9 @@ Below I am going to outline how you would run up a virtual environment if you in
 
 To begin please run:
 
+```shell
 pip install virtualenv
+```
 
 Then to set up virtual environment:
 
@@ -42,7 +44,7 @@ deactivate
 
 Once activated any python commands run in that session will only affect the virtual environment such as download of packages etc. 
 
-Pipenv & Poetry
+## Pipenv & Poetry
 
 As well as the above ways to create virtual environments there are two other tools that are popular in setting up python environments at MadeTech: 
 
