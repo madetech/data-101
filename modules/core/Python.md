@@ -1,6 +1,6 @@
-#Tutorial: Setting up your Python environment
+# Tutorial: Setting up your Python environment
 
-#Simple setup:
+# Simple setup:
 
 When working on a python project it is beneficial to use virtual environments to ensure that all developers on the project have the same dependencies and are able to spin up an environment quickly.
 
