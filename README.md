@@ -1,6 +1,6 @@
 # data-101: An introduction to big data in Made Tech
 
-Welcome to the data-101 learnign pack! Here you can find a clear learning path to guide you on your way into the world of data engineering.
+Welcome to the data-101 learning pack! Here you can find a clear learning path to guide you on your way into the world of data engineering.
 We're also building a collection of supplementary learning modules, these are not strictly necessary but highly relevant to data engineering.
 You can find the core learning path below, this is a series of concise modules aiming to take an engineer with no data experience to feeling competent when presented with a data focussed project.
 
