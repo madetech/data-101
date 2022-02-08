@@ -2,7 +2,7 @@
 
 Welcome to the data-101 learnign pack! Here you can find a clear learning path to guide you on your way into the world of data engineering.
 We're also building a collection of supplementary learning modules, these are not strictly necessary but highly relevant to data engineering.
-You can find the core learning path below, this is a collection of sequential concises modules aiming to take an engineer with no data experience to feel competent on an data focussed project.
+You can find the core learning path below, this is a series of concise modules aiming to take an engineer with no data experience to feeling competent when presented with a data focussed project.
 
 ![Learning pathway diagram](https://github.com/madetech/data-101/blob/main/images/learningpathway.png?raw=true)
 
