@@ -2,7 +2,7 @@
 
 ## Simple setup:
 
-When working on a python project it is beneficial to use virtual environments to ensure that all developers on the project have the same dependencies and are able to spin up an environment quickly. A local python environment will allow you install packages to a local environment that won't interfer with your global installed packages.
+When working on a python project it is beneficial to use virtual environments to ensure that all developers on the project have the same dependencies and are able to spin up an environment quickly. A virtual python environment segregates project specific packages from your global installed packages.
 
 To manage the python versions on your machine locally then install ‘pyenv’ which is a Python version management system. Using pyenv you can set global and local versions of what Python version you would like to run.
 
