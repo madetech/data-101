@@ -4,8 +4,9 @@
 
 ## What is PySpark?
 
-"PySpark is an interface for Apache Spark in Python. It not only allows you to write Spark applications using Python APIs, but also provides the PySpark shell for interactively analyzing your data in a distributed environment."[1]
+"PySpark is an interface for Apache Spark in Python. It not only allows you to write Spark applications using Python APIs, but also provides the PySpark shell for interactively analyzing your data in a distributed environment." [1]
 
+## Exercise
 To run this excercise you should be able to use your local Python environment with PySpark enabled.
 
 You could also set up a notebook on a Databricks workspace or use [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html).
