@@ -4,14 +4,18 @@
 
 ## What is PySpark?
 
-Spark is a tool for managing and coordinating the execution of tasks on data across a cluster of computers. Apache Spark is written in the Scala programming language. PySpark is an interface for Apache Spark in Python. It not only allows you to write Spark applications using Python APIs, but also provides the PySpark shell for interactively analyzing your data in a distributed environment.
+Spark is a tool for managing and coordinating the execution of tasks on data across a cluster of computers. Apache Spark is written in the Scala programming language. PySpark is an interface for Apache Spark in Python. It not only allows you to write Spark applications using Python APIs, but also provides the PySpark shell for interactively analyzing your data in a distributed environment. 
+
+Take a look at [PySpark's Installation Instructions](https://spark.apache.org/docs/latest/api/python/getting_started/install.html "PySpark's Installation Instructions").
 
 ## Exercise
 To run this excercise you should be able to use your local Python environment with PySpark enabled.
 
 You could also set up a notebook on a Databricks workspace or use [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html).
 
-Please download flight-data from the [Spark-The-Definitive-Guide repo](https://github.com/databricks/Spark-The-Definitive-Guide/tree/master/data/flight-data) and put it somewhere that is accessible in your PySpark environment.
+If you are stuck on setting up the project, refer to the instructions on [this](https://github.com/databricks/Spark-The-Definitive-Guide "this") page.
+
+Please download **flight-data** from the [Spark-The-Definitive-Guide repo](https://github.com/databricks/Spark-The-Definitive-Guide/tree/master/data/flight-data) and put it somewhere that is accessible in your PySpark environment.
 
 For examples and guidance on using PySpark, please refer to the documentation [here](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.SparkSession.html).
 
