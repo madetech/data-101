@@ -19,7 +19,23 @@ Please download **flight-data** from the [Spark-The-Definitive-Guide repo](https
 
 For examples and guidance on using PySpark, please refer to the documentation [here](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.SparkSession.html).
 
-1) To begin please read in the csv file '2015-summary.csv using the DataFrameReader with option 'inferSchema' and 'header' set to true
+1) To begin please read in the csv file '2015-summary.csv using the DataFrameReader with option 'inferSchema' and 'header' set to true.
+
+```python
+from pyspark.context import SparkContext
+from pyspark.sql.session import SparkSession
+sc = SparkContext('local')
+spark = SparkSession(sc)
+
+flightData2015 = spark\
+  .read\
+  .option("inferSchema", "true")\
+  .option("header", "true")\
+  .csv("csv/2015-summary.csv")
+
+x = flightData2015.take(4)
+print(x)
+```
 
 2) Return the first 4 rows of the table as a list by using the .take() command
 
@@ -31,7 +47,7 @@ For examples and guidance on using PySpark, please refer to the documentation [h
 
 6) Below is an example of querying using SQl against a dataframe:
 
-```
+```sql
 sqlWay = spark.sql("""
 SELECT DEST_COUNTRY_NAME, count(1)
 FROM flight_data_2015
@@ -43,7 +59,7 @@ how could you do this using just DataFrame code? Using sqlWay.explain() will als
 
 7) Now if I wanted to find the top 5 destinations according to this CSV file then I would execute:
 
-```
+```sql
 maxSql = spark.sql("""
 SELECT DEST_COUNTRY_NAME, sum(count) as destination_total
 FROM flight_data_2015
