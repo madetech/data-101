@@ -1,12 +1,18 @@
-# Pyspark the basics
+# PySpark: The Basics
 
-To run this excercise you should be able to use your local python environment with pyspark enabled. 
+![PySpark logo](https://miro.medium.com/max/800/1*VNdaFCkls0gyJR0ddP1PCQ.png "PySpark logo")
 
-You could also set up a notebook on a databricks workspace or use [databricks connect](https://docs.databricks.com/dev-tools/databricks-connect.html).
+## What is PySpark?
 
-Please download flight-data from the [Spark-The-Definitive-Guide repo](https://github.com/databricks/Spark-The-Definitive-Guide/tree/master/data/flight-data) and put it somewhere that is accessible in your pyspark environemnt. 
+"PySpark is an interface for Apache Spark in Python. It not only allows you to write Spark applications using Python APIs, but also provides the PySpark shell for interactively analyzing your data in a distributed environment."[1]
 
-For examples and guidance on using pyspark please refer to this documentation [here](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.SparkSession.html)
+To run this excercise you should be able to use your local Python environment with PySpark enabled.
+
+You could also set up a notebook on a Databricks workspace or use [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html).
+
+Please download flight-data from the [Spark-The-Definitive-Guide repo](https://github.com/databricks/Spark-The-Definitive-Guide/tree/master/data/flight-data) and put it somewhere that is accessible in your PySpark environment.
+
+For examples and guidance on using PySpark, please refer to the documentation [here](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.SparkSession.html).
 
 1) To begin please read in the csv file '2015-summary.csv using the DataFrameReader with option 'inferSchema' and 'header' set to true
 
@@ -48,3 +54,7 @@ maxSql.printSchema()
 .show() prints out the table and .printSchema() the schema. Do this same operation using DataFrame code. 
 
 8) Rename the column count to destination_total and then sort this by descending order
+
+## Resources
+
+1. PySpark documentation https://spark.apache.org/docs/latest/api/python/
