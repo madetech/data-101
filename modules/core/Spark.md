@@ -44,7 +44,7 @@ You should see the following output:
 
     [Row(DEST_COUNTRY_NAME='United States', ORIGIN_COUNTRY_NAME='Romania', count=15), Row(DEST_COUNTRY_NAME='United States', ORIGIN_COUNTRY_NAME='Croatia', count=1), Row(DEST_COUNTRY_NAME='United States', ORIGIN_COUNTRY_NAME='Ireland', count=344), Row(DEST_COUNTRY_NAME='Egypt', ORIGIN_COUNTRY_NAME='United States', count=15)]
 
-3) A key part of PySpark is transformation of data. Return a new DataFrame sorted by the column 'count' (the sort command will be useful here and `.explain()` which will showcase the DataFrame lineage).
+3) A key part of PySpark is transformation of data. Return a new DataFrame sorted by the column 'count' (the `sort` command will be useful here and `.explain()` which will showcase the DataFrame lineage).
 
 ```python
 flightData2015.sort("count").explain()
