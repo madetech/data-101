@@ -63,8 +63,11 @@ Run `.take()` command again after the sort to see how this has changed what the 
 y = flightData2015.sort("count").take(2)
 print(y)
 ```
+The output you should be getting:
 
-4) A partition in spark is an atomic chunk of data (logical division of data) stored on a node in the cluster. `spark.sql.shuffle.partitions` configures the number of partitions that are used when shuffling data for joins or aggregations. By default, when we perform a shuffle Spark outputs 200 shuffle partitions, experiment with reducing these partitions with 'spark.conf.set'. Depending on the number it may impact runtime.
+    [Row(DEST_COUNTRY_NAME='United States', ORIGIN_COUNTRY_NAME='Singapore', count=1), Row(DEST_COUNTRY_NAME='Moldova', ORIGIN_COUNTRY_NAME='United States', count=1)]
+
+4) A partition in Spark is an atomic chunk of data (logical division of data) stored on a node in the cluster. `spark.sql.shuffle.partitions` configures the number of partitions that are used when shuffling data for joins or aggregations. By default, when we perform a shuffle Spark outputs 200 shuffle partitions, experiment with reducing these partitions with 'spark.conf.set'. Depending on the number it may impact runtime.
 
 ```python
 spark.conf.set("spark.sql.shuffle.partitions", "5")
@@ -88,7 +91,7 @@ GROUP BY DEST_COUNTRY_NAME
 
 How could you do this using just DataFrame code? Using `sqlWay.explain()` will also show how Spark will execute the query.
 
-7) Now if I wanted to find the top 5 destinations according to this CSV file then I would execute:
+7) Now, if I wanted to find the top 5 destinations according to this CSV file then I would execute:
 
 ```sql
 maxSql = spark.sql("""
@@ -112,5 +115,5 @@ maxSql.printSchema()
 ## References and Further Reading
 
 1. [Spark: The Definitive Guide Book](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/ "Spark: The Definitive Guide") by Bill Chambers and Matei Zaharia (Chapter 2)
-2. PySpark documentation https://spark.apache.org/docs/latest/api/python/
+2. [PySpark Documentation](https://spark.apache.org/docs/latest/api/python/ "PySpark Documentation")
 3. [Explore best practices for Spark performance optimization](https://developer.ibm.com/blogs/spark-performance-optimization-guidelines/ "Explore best practices for Spark performance optimization") IBM blog post
