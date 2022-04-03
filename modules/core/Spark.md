@@ -46,9 +46,9 @@ You should see the following output:
 
 3) A key part of PySpark is transformation of data. Return a new DataFrame sorted by the column 'count' (the sort command will be useful here and `.explain()` which will showcase the DataFrame lineage).
 
-
-    flightData2015.sort("count").explain()
-
+```python
+flightData2015.sort("count").explain()
+```
 
 Adding the code above will show us the explain plan, so you should see something like this:
 
@@ -103,15 +103,14 @@ maxSql.show()
 maxSql.printSchema()
 ```
 
-`.show()` prints out the table and `.printSchema()` the schema. Do this same operation using DataFrame code. 
+`.show()` prints out the table and `.printSchema()` the schema. Do this same operation using DataFrame code.
 
-8) Rename the column count to destination_total and then sort this by descending order
+8) As you can see in the table below, we have renamed the column count to destination_total and then sorted it by descending order:
 
-## Further reading
+![Top 5 destinations table](https://i.ibb.co/9NhNKQH/countries-table.png "Top 5 destinations table")
 
-- [Explore best practices for Spark performance optimization](https://developer.ibm.com/blogs/spark-performance-optimization-guidelines/ "Explore best practices for Spark performance optimization") IBM blog post
+## References and Further Reading
 
-## References
-
-1. [Spark: The Definitive Guide Book](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/ "Spark: The Definitive Guide") by Bill Chambers and Matei Zaharia
+1. [Spark: The Definitive Guide Book](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/ "Spark: The Definitive Guide") by Bill Chambers and Matei Zaharia (Chapter 2)
 2. PySpark documentation https://spark.apache.org/docs/latest/api/python/
+3. [Explore best practices for Spark performance optimization](https://developer.ibm.com/blogs/spark-performance-optimization-guidelines/ "Explore best practices for Spark performance optimization") IBM blog post
