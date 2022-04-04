@@ -4,11 +4,13 @@
 
 ## What is PySpark?
 
-Spark is a tool for managing and coordinating the execution of tasks on data across a cluster of computers. Apache Spark is written primarily in the Scala programming language. PySpark is an interface for Apache Spark in Python. It not only allows you to write Spark applications using Python APIs, but also provides the PySpark shell for interactively analyzing your data in a distributed environment.
+Apache Spark + Python = PySpark
 
-Take a look at [PySpark's installation instructions](https://spark.apache.org/docs/latest/api/python/getting_started/install.html "PySpark's Installation Instructions").
+Spark is a tool for managing and coordinating the execution of tasks on data across a cluster of computers. Apache Spark is written primarily in the Scala programming language. PySpark is an interface for Apache Spark in Python, which is used for real-time, large-scale data processing. It not only allows you to write Spark applications using Python APIs, but also provides the PySpark shell for interactively analyzing your data in a distributed environment.
 
 ## Exercise
+Take a look at [PySpark's installation instructions](https://spark.apache.org/docs/latest/api/python/getting_started/install.html "PySpark's Installation Instructions").
+
 To run this excercise you should be able to use your local Python environment with PySpark enabled.
 
 You could also set up a notebook on a Databricks workspace or use [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html).
