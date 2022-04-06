@@ -9,13 +9,11 @@ Apache Spark + Python = PySpark
 Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters. Apache Spark is written primarily in the Scala programming language. PySpark is an interface for Apache Spark in Python, which is used for real-time, large-scale data processing.
 
 ## Exercise
-Take a look at [Python and PySpark's installation instructions](https://github.com/madetech/data-101/blob/main/modules/core/Python.md "PySpark's Installation Instructions").
+Take a look at [Python and PySpark's installation instructions](https://github.com/madetech/data-101/blob/main/modules/core/Python.md "Python and PySpark's Installation Instructions").
 
 To run this excercise you should be able to use your local Python environment with PySpark enabled.
 
 You could also set up a notebook on a Databricks workspace or use [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html).
-
-If you are stuck on setting up the project, refer to the instructions on [this](https://github.com/databricks/Spark-The-Definitive-Guide "this") page.
 
 Please download **flight-data** from the [Spark-The-Definitive-Guide repo](https://github.com/databricks/Spark-The-Definitive-Guide/tree/master/data/flight-data) and put it somewhere that is accessible in your PySpark environment.
 
@@ -33,7 +31,7 @@ flightData2015 = spark\
   .read\
   .option("inferSchema", "true")\
   .option("header", "true")\
-  .csv("csv/2015-summary.csv")
+  .csv("relative path to 2015-summary.csv file")
 ```
 
 2) Now, return the first 4 rows of the table as a list by using the `.take()` command
