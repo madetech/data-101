@@ -2,6 +2,8 @@
 
 ## Simple setup:
 
+Below are instructions to set up on a MAC you will need to adapt these stages for Windows and Linux.
+
 When working on a python project it is beneficial to use virtual environments to ensure that all developers on the project have the same dependencies and are able to spin up an environment quickly. A virtual python environment segregates project specific packages from your global installed packages.
 
 To manage the python versions on your machine locally then install ‘pyenv’ which is a Python version management system. Using pyenv you can set global and local versions of what Python version you would like to run.
@@ -54,6 +56,30 @@ As well as the above ways to create virtual environments there are two other too
 
 Poetry in particular has gained popularity due to being able to spin up clean encapsulated environments, easy packaging and quality checking.
 Delta Setup
+
+To install pyspark via homebrew:
+
+If you do not have homebrew please visit the site [here](https://brew.sh/) for more information and how to download.
+
+When or if you already have homebrew then please execute this command below:
+
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+set brew to your $PATH
+
+```shell
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/admin/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+To install pyspark you will first need to install java. We have found jdk@8 most comptabile with spark.
+
+```shell
+brew install openjdk@8
+```
 
 If you are testing pyspark locally then all you need to do in your pipfile install:
 
