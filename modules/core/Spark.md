@@ -89,7 +89,7 @@ GROUP BY DEST_COUNTRY_NAME
 """)
 ```
 
-How could you do this using just DataFrame code? Using `sqlWay.explain()` will also show how Spark will execute the query.
+Using `sqlWay.explain()` will also show how Spark will execute the query. How could you do this using just DataFrame code?
 
 ```python
 dataFrameWay = flightData2015\
