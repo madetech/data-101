@@ -50,7 +50,7 @@ You should see the following output:
 flightData2015.sort("count").explain()
 ```
 
-Adding the code above will show us the explain plan, so you should see something like this:
+Adding the code above will show us the [explain plan](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.DataFrame.explain.html "explain plan"), so you should see something like this:
 
     == Physical Plan ==
     *Sort [count#195 ASC NULLS FIRST], true, 0
@@ -79,7 +79,7 @@ spark.conf.set("spark.sql.shuffle.partitions", "5")
 flightData2015.createOrReplaceTempView("flight_data_2015")
 ```
 
-6) Below is an example of querying using SQL against a dataframe:
+6) Below is an example of querying using SQL against a DataFrame:
 
 ```sql
 sqlWay = spark.sql("""
@@ -111,6 +111,20 @@ maxSql.printSchema()
 8) As you can see in the table below, we have renamed the column count to destination_total and then sorted it by descending order:
 
 ![Top 5 destinations table](https://i.ibb.co/9NhNKQH/countries-table.png "Top 5 destinations table")
+
+Finally, the DataFrame way to do this exercise and see the table of countries above:
+
+```python
+from pyspark.sql.functions import desc
+
+flightData2015\
+  .groupBy("DEST_COUNTRY_NAME")\
+  .sum("count")\
+  .withColumnRenamed("sum(count)", "destination_total")\
+  .sort(desc("destination_total"))\
+  .limit(5)\
+  .show()
+```
 
 ## References and Further Reading
 
