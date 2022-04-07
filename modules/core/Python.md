@@ -53,7 +53,8 @@ As well as the above ways to create virtual environments there are two other too
 [Poetry](https://python-poetry.org/)
 
 Poetry in particular has gained popularity due to being able to spin up clean encapsulated environments, easy packaging and quality checking.
-Delta Setup
+
+**Delta Setup**
 
 If you are testing pyspark locally then all you need to do in your pipfile install:
 
