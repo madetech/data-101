@@ -91,6 +91,14 @@ GROUP BY DEST_COUNTRY_NAME
 
 How could you do this using just DataFrame code? Using `sqlWay.explain()` will also show how Spark will execute the query.
 
+```python
+dataFrameWay = flightData2015\
+  .groupBy("DEST_COUNTRY_NAME")\
+  .count()
+
+dataFrameWay.explain()
+```
+
 7) Now, if I wanted to find the top 5 destinations according to this CSV file then I would execute:
 
 ```sql
@@ -106,7 +114,7 @@ maxSql.show()
 maxSql.printSchema()
 ```
 
-`.show()` prints out the table and `.printSchema()` the schema. Do this same operation using DataFrame code.
+`.show()` prints out the table and `.printSchema()` the schema.
 
 8) As you can see in the table below, we have renamed the column count to destination_total and then sorted it by descending order:
 
