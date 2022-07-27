@@ -23,7 +23,7 @@ To expand upon the core learning modules please check out the learning objective
 
 ## Learning Objectives
 
-- :sparkle [Data Engineer Learning Objectives](learning_objectives/Data_Engineer.md)
+- :sparkle: [Data Engineer Learning Objectives](learning_objectives/Data_Engineer.md)
 
 ## Contributing to data-101
 We welcome and encourage all contributions! This resource is built by the COP-data community for the COP-data community.
