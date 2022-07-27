@@ -73,35 +73,3 @@ If you want to explore further than what is on this dcoument then please look at
 [Azure AI Fundementals](https://docs.microsoft.com/en-us/certifications/azure-ai-fundamentals/)
 
 [Databricks Lakehouse Fundmentals](https://databricks.com/learn/training/lakehouse-fundamentals)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
