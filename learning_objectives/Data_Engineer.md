@@ -50,7 +50,7 @@ If you want to explore further than what is on this dcoument then please look at
 
 [Data Lake vs Data Warehouse: What’s the Difference? (website)](https://www.guru99.com/data-lake-vs-data-warehouse.html)
 
-[Data Warehouse (webssite)](https://www.guru99.com/data-warehousing.html)
+[Data Warehouse (website)](https://www.guru99.com/data-warehousing.html)
 
 [Databricks Data Lake (website)](https://databricks.com/discover/data-lakes/introduction)
 
@@ -62,7 +62,7 @@ If you want to explore further than what is on this dcoument then please look at
 
 [HashiCorp Learn (website)](https://learn.hashicorp.com/terraform)
 
-[IaC tool comparison](https://www.techtarget.com/searchdatacenter/feature/IaC-tools-comparison-shows-benefits-of-automated-deployments)
+[IaC tool comparison (website)](https://www.techtarget.com/searchdatacenter/feature/IaC-tools-comparison-shows-benefits-of-automated-deployments)
 
 ##  Data Engineer Exams
 
