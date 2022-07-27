@@ -4,6 +4,8 @@ Welcome to the data-101 learning pack! Here you can find a clear learning path t
 We're also building a collection of supplementary learning modules, these are not strictly necessary but highly relevant to data engineering.
 You can find the core learning path below, this is a series of concise modules aiming to take an engineer with no data experience to feeling competent when presented with a data focussed project.
 
+To expand upon the core learning modules please check out the learning objectives folder where you can see some of the key learning objectives for each data engineer level, and resources to help you achieve those learning objectives.
+
 ![Learning pathway diagram](https://github.com/madetech/data-101/blob/main/images/learningpathway.png?raw=true)
 
 ## Core learning path
@@ -18,6 +20,10 @@ You can find the core learning path below, this is a series of concise modules a
 - :scream_cat: [SQL](modules/supplementary/SQL.md)
 - :computer: [Terraform](modules/supplementary/Terraform.md)
 - :floppy_disk: [Databases](modules/supplementary/Database.md)
+
+## Learning Objectives
+
+- :sparkle [Data Engineer Learning Objectives](learning_objectives/Data_Engineer.md)
 
 ## Contributing to data-101
 We welcome and encourage all contributions! This resource is built by the COP-data community for the COP-data community.
