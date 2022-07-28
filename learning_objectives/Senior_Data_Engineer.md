@@ -49,9 +49,9 @@ If you want to explore further than what is on this document then please look at
 
 [Terratest (website)](https://terratest.gruntwork.io/docs/getting-started/quick-start/)
 
-## Uses basic knowledge of ML/NLP to incorporate data science needs into construction of data platforms, identifying opportunities to grow client accounts and generate future work working with data scientists.
+## Uses basic knowledge of ML/NLP to incorporate data science needs into construction of data platforms, identifying opportunities to work with with data scientists.
 
-
+[Machine learning workflow (website)](https://cloud.google.com/ai-platform/docs/ml-solutions-overview)
 
 
 
