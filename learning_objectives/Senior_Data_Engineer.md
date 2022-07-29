@@ -22,6 +22,8 @@ If you want to explore further than what is on this document then please look at
 
 [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems - Martin Kleppmann (book)](https://www.amazon.co.uk/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 
+[Data Engineering on Azure - Vlad Riscutia (book)](https://www.oreilly.com/library/view/data-engineering-on/9781617298929/)
+
 [Spark - The Definitive Guide: Big data processing made simple (book)](https://www.amazon.co.uk/Spark-Definitive-Guide-Bill-Chambers/dp/1491912219)
 
 ## Creates complex, automated data architecture from scratch, owning deployment of cloud infrastructure to provide DevOps automation with a standard and centralized platform for testing, deployment, and production.
@@ -53,6 +55,27 @@ If you want to explore further than what is on this document then please look at
 
 [Machine learning workflow (website)](https://cloud.google.com/ai-platform/docs/ml-solutions-overview)
 
+[An Overview of the End-to-End Machine Learning Workflow (website)](https://ml-ops.org/content/end-to-end-ml-workflow)
 
+[Data Pipelines Vs. ML Pipelines – Similarities and Differences part 1 (article)](https://www.forepaas.com/en/blog/data-pipelines-ai-pipelines-1/)
 
+[Data Pipelines Vs. ML Pipelines – Similarities and Differences part 2 (article)](https://www.forepaas.com/en/blog/data-pipelines-ai-pipelines-2/)
+
+[Metrics to Evaluate your Machine Learning Algorithm (article)](https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234)
+
+[AWS ML Learning Path (website)](https://aws.amazon.com/training/learn-about/machine-learning/)
+
+[Supervised Machine Learning: Regression and Classification (course)](https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction)
+
+## Creates interactive dashboards using cloud-based analysis services to extract and visualise interactive data.
+
+[Python Plotly Tutorial (website)](https://www.geeksforgeeks.org/python-plotly-tutorial/)
+
+[Power BI Beginners (video)](https://www.youtube.com/watch?v=TmhQCQr_DCA)
+
+[Tableau in Two Minutes - Tableau Basics for Beginners (video)](https://www.youtube.com/watch?v=jEgVto5QME8)
+
+[Introduction to Azure Data Explorer (course)](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-explorer/)
+
+[What is AWS QuickSight (website)](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
 
