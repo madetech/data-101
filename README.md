@@ -3,6 +3,7 @@
 Please check out below the learning objectives for data engineer levels!
 
 - :sparkle: [Data Engineer Learning Objectives](learning_objectives/Data_Engineer.md)
+- :mechanical_arm: [Senior Data Engineer Learning Objectives](learning_objectives/Senior_Data_Engineer.md)
 
 # data-101: An introduction to big data in Made Tech (basic tutorial)
 
