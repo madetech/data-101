@@ -79,3 +79,17 @@ If you want to explore further than what is on this document then please look at
 
 [What is AWS QuickSight (website)](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
 
+## Senior Data Engineer Exams
+
+[AWS Certified Developer - Associate](https://aws.amazon.com/certification/certified-developer-associate/)
+
+[AWS Certified Solutions Architect - Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+
+[AWS Certified Solutions Architect - Professional](https://aws.amazon.com/certification/certified-solutions-architect-professional/)
+
+[Azure Data Engineer](https://docs.microsoft.com/en-us/certifications/azure-data-engineer/)
+
+[Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)
+
+[Databricks Engineer Associate](https://databricks.com/learn/certification/data-engineer-associate)
+
