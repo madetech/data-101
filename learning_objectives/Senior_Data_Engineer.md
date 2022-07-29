@@ -93,3 +93,4 @@ If you want to explore further than what is on this document then please look at
 
 [Databricks Engineer Associate](https://databricks.com/learn/certification/data-engineer-associate)
 
+[Databricks Spark Developer Associate](https://databricks.com/learn/certification/apache-spark-developer-associate)
