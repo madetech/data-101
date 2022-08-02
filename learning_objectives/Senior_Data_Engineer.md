@@ -61,12 +61,6 @@ If you want to explore further than what is on this document then please look at
 
 [Data Pipelines Vs. ML Pipelines – Similarities and Differences part 2 (article)](https://www.forepaas.com/en/blog/data-pipelines-ai-pipelines-2/)
 
-[Metrics to Evaluate your Machine Learning Algorithm (article)](https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234)
-
-[AWS ML Learning Path (website)](https://aws.amazon.com/training/learn-about/machine-learning/)
-
-[Supervised Machine Learning: Regression and Classification (course)](https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction)
-
 ## Creates interactive dashboards using cloud-based analysis services to extract and visualise interactive data.
 
 [Python Plotly Tutorial (website)](https://www.geeksforgeeks.org/python-plotly-tutorial/)
