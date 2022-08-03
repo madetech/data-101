@@ -70,7 +70,7 @@ This document aims to provide learning resources to help in training for a Lead 
 
 ## Lead Data Engineer Exams
 
-Please refer to [Senior Data Engineer document](learning_objectives/Senior_Data_Engineer.md) for additional supplementary certifications
+Please refer to [Senior Data Engineer document](Senior_Data_Engineer.md) for additional supplementary certifications
 
 [Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)]
 
