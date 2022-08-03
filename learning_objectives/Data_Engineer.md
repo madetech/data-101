@@ -70,6 +70,4 @@ If you want to explore further than what is on this document then please look at
 
 [Azure Data Fundamentals](https://docs.microsoft.com/en-us/certifications/azure-data-fundamentals/)
 
-[Azure AI Fundementals](https://docs.microsoft.com/en-us/certifications/azure-ai-fundamentals/)
-
 [Databricks Lakehouse Fundmentals](https://databricks.com/learn/training/lakehouse-fundamentals)

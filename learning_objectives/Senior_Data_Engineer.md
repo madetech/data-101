@@ -83,8 +83,8 @@ If you want to explore further than what is on this document then please look at
 
 [Azure Data Engineer](https://docs.microsoft.com/en-us/certifications/azure-data-engineer/)
 
-[Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)
-
 [Databricks Engineer Associate](https://databricks.com/learn/certification/data-engineer-associate)
 
 [Databricks Spark Developer Associate](https://databricks.com/learn/certification/apache-spark-developer-associate)
+
+[Azure AI Fundementals](https://docs.microsoft.com/en-us/certifications/azure-ai-fundamentals/)
