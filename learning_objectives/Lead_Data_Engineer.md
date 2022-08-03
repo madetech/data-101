@@ -6,7 +6,7 @@ This document aims to provide learning resources to help in training for a Lead 
 
 [Designing Data Intensive Applications (book)](https://www.amazon.com/gp/product/1449373321/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1449373321&linkCode=as2&tag=snirsuggestin-20&linkId=d270da1b4c8d354124107125921953d3)
 
-[Designing distributed systems (book)](https://www.udemy.com/course/the-complete-sql-bootcamp/)
+[Designing distributed systems (book)](https://www.amazon.co.uk/Designing-Distributed-Systems-Brendan-Burns/dp/1491983647/ref=asc_df_1491983647/?tag=googshopuk-21&linkCode=df0&hvadid=310831942794&hvpos=&hvnetw=g&hvrand=16720281858592116965&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9045997&hvtargid=pla-420602092307&psc=1&th=1&psc=1)
 
 [Kubernetes - Reusable Elements for Designing Cloud-Native Applications](https://www.redhat.com/cms/managed-files/cm-oreilly-kubernetes-patterns-ebook-f19824-201910-en.pdf)
 
