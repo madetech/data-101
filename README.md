@@ -6,7 +6,7 @@ Please check out below the Data Learning Paths!
 - :mechanical_arm: [Senior Data Engineer Learning Objectives](data_learning_paths/Senior_Data_Engineer.md)
 - :crystal_ball: [Lead Data Engineer Learning Objectives](data_learning_paths/Lead_Data_Engineer.md)
 
-If you enjoyed using these learning paths or have feedack, please use this [feedback form](https://madetech.typeform.com/datalearning)
+If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
 
 # data-101: An introduction to big data in Made Tech (basic tutorial)
