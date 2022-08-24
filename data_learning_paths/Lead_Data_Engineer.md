@@ -2,6 +2,8 @@
 
 This document aims to provide learning resources to help in training for a Lead Data Engineer. This list is not exhaustive and is simply to help learning some of the core concepts we have around data engineering for that level. We have given a variety of resources from articles to online courses to help with progressing towards completing these learning objectives. We have also put at the end optional certifications you can pursue to concrete your knowledge. Any comments, feedback or reports of missing/broken links please slack the cop-data channel. 
 
+If you enjoyed using these learning paths or have feedack, please use this [feedback form](https://madetech.typeform.com/datalearning)
+
 ## Develops optimal collection and data strategies, applying different capture techniques, determining types of data to optimise processes
 
 [Designing Data Intensive Applications - Martin Kleppmann (book)](https://www.amazon.com/gp/product/1449373321/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1449373321&linkCode=as2&tag=snirsuggestin-20&linkId=d270da1b4c8d354124107125921953d3)

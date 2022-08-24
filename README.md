@@ -1,10 +1,12 @@
-## Learning Objectives
+## Data Learning Paths
 
-Please check out below the learning objectives for data engineer levels!
+Please check out below the Data Learning Paths!
 
-- :sparkle: [Data Engineer Learning Objectives](learning_objectives/Data_Engineer.md)
-- :mechanical_arm: [Senior Data Engineer Learning Objectives](learning_objectives/Senior_Data_Engineer.md)
-- :crystal_ball: [Lead Data Engineer Learning Objectives](learning_objectives/Lead_Data_Engineer.md)
+- :sparkle: [Data Engineer Learning Objectives](data_learning_paths/Data_Engineer.md)
+- :mechanical_arm: [Senior Data Engineer Learning Objectives](data_learning_paths/Senior_Data_Engineer.md)
+- :crystal_ball: [Lead Data Engineer Learning Objectives](data_learning_paths/Lead_Data_Engineer.md)
+
+If you enjoyed using these learning paths or have feedack, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
 
 # data-101: An introduction to big data in Made Tech (basic tutorial)
