@@ -74,7 +74,7 @@ If you enjoyed using these learning paths or have feedback, please use this [fee
 
 Please refer to [Senior Data Engineer document](Senior_Data_Engineer.md) for additional supplementary certifications
 
-[Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)]
+[Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)
 
 [Databricks Certified Data Engineer Professional](https://databricks.com/learn/certification/data-engineer-professional)
 
