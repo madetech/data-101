@@ -1,6 +1,6 @@
 # Data Engineer Learning Path
 
-This document aims to provide learning resources to help in training for a Data Engineer level. This list is not exhaustive and is simply to help learning some of the core concepts we have around data engineering for that level. We have given a variety of resources from articles to online courses to help with progressing towards completing these learning objectives. We have also put at the end optional certifications you can pursue to concrete your knowledge. Any comments, feedback or reports of missing/broken links please slack the cop-data channel. 
+This document aims to provide learning resources to help in training for a Data Engineer level. This list is not exhuastive and is simply to help learning some of the core concepts we have around data engineering for that level. We have given a variety of resources from articles to online courses to help with progressing towards completing these learning objectives. You may also prefer hands-on learning, and using a combination of different approaches is recommended. We have also put at the end optional certifications you can pursue to concrete your knowledge. Any comments, feedback or reports of missing/broken links please slack the cop-data channel. 
 
 If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
