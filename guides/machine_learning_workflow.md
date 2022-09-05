@@ -20,27 +20,18 @@ Machine Learning has an incredible range of problems it can solve, processes it 
 
 **Clustering**: Finally we have clustering. This is a version of unsupervised learning that can be used to determine or specify user groups based on selected metrics. Highlight similarities between teams, departments, organisations and locations, or even find outliers in a data set that might otherwise go unnoticed.
 
-All things considered, there are  plenty of instances where the implementation of a ML model can deliver massive benefits to a department. It is important to remember that Made Tech has a wealth of people with a huge range of diverse experience! We are always looking to discuss any project you think may benefit from a data unlock! 
+All things considered, there are plenty of instances where the implementation of a ML model can deliver massive benefits to a department. It is important to remember that Made Tech has a wealth of people with a huge range verse experience! We are always looking to discuss any project you think may benefit from a data unlock! 
 
-<!-- 
-all about problem formulation - starting point of any ML project - required to identify the problem
-What are we trying to solve? Consiquences of using ML - what are the ramifications of incorrect answers. 
-What is the business metric, cost reduction, increased customer base, improved efficiency. What is the correct metric - what is the impact - what quality of metric. Are there multiple metrics? is there a priority? Can they be linked? 
-Can this be answered by business logic instead? 
-Do we have enough data? Do we have High quality data? Needs high quality big data set
-Is the data static or evolving over time?
-Communication is key as these will all have implications on the time scale of the project.  -->
+## Data collection and Preparation
+Core to any ML project is the data, as this is what we use to train a model and evaluate it effectiveness. The overall success of any machine learning project relies heavily on there being enough high quality data available to analyse. Only from this can we hope to draw meaningful conclusions. As a rule of thumb, the bigger the initial data set the better. As we progress through the various development stages the aim will be to produce a core of very high quality data, this will then be segmented into training, validation and testing sets and fed to the model. Without a large initial data set, the project runs the risk of not having enough high quality data to be truly representative resulting in a poorly trained model that wont be reliable. 
+
+It is important to consider the collection process. Is the data source reliable? Does the data set truly represent whatever you wish to analyse? If you are looking to perform time series analysis, does the data cover a long enough period of time? If you are looking to perform image recognition, do you have a large enough dataset of correctly labeled images? A model trained on a set containing mostly one demographic may have trouble identifying or dealing with others. Data collection is a time intensive and resource heavy process, is it part of the statement of work? In cases were we need to attain data ourselves, say from conducting user surveys or scraping logs, then the collecting, cleaning, sorting and storing of this data could even be considered a completely separate delivery. 
+
+Once the data has been colleted then we must consider how easily accessible that data is and about the infrastructure supporting it. Data at the scale required for effective machine learning can rarely be stored in simple excel sheets and will become impossible to maintain as the project progresses. Building out a robust data infrastructure is a fantastic development for any business, and of course one that Made Tech has plenty of experience in delivering. The goal here is to move from single excel sheets held on an individuals computer, to a managed databases hosted on a suitable cloud platform that can be monitored, updated and maintained. 
 
 
-## Frame the problem as a Machine Learning problem
-<!-- What kind of ML algorithm can we apply 
-Supervised vs unsupervised or semisupervised?
-Likely multiple models working together to answer a question. 
-Establish the criteria for success - you can always tweak to improve
-Always defer to the simpler model -->
 
 
-## Collect and Integrate the data
 <!-- does not end - it continues to evolve. 
 Sometimes you need to find more data or find new data for new features. 
 Need enough for A/B testing. 
@@ -65,6 +56,9 @@ Labels MUST be correct in order for the model to reliably train  -->
 
 ## Prepare the data
 <!-- Is the data accessible? Can the data be easily and efficiently queried? Is there a data pipeline in place? Are there appropriate environments for the data to be analysed and explored? Is the data scientist required to develop locally or in a cloud environment? who owens the env? Is there sensitive or identifiable data that needs to be obfuscated? What steps do we need to enact in order to get the data to a reasonable state - Is there a clear data schema? -->
+
+
+
 ## Use visualisations and exploratory techniques to analyse the data 
 <!-- Exploratory data analysis - Data statistics - data visualisations - how many features are there? are these features relevant? What can the domain experts tell you? 
 Numerical
@@ -113,3 +107,8 @@ How does the client want to interact with the model
 MLmodels will require constant monitoring and development as the data will inevitably change shape over the course of time. 
 Does the client have the requisite skills / developers in place to maintain a data pipeline / ML model
 has up skilling been park of the delivery -->
+
+## Hosting 
+
+## Conclusions
+If the client has data that they wish to be interrogated then there is likely something that a data scientist can do. This creates an incredible opportunity for Made Tech to step forward and offer to do more. Once a data scientist has been able to spend some time with the data, be that taken from years of excel spread sheets or scraped from the web, 
