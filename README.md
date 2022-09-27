@@ -4,9 +4,9 @@ Please check out the Data Learning Paths below!
 
 ```mermaid 
 flowchart TD;
-    A(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Data_Engineer.md'>&amp#x1F47E Data Engineer</a>) --> B(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Senior_Data_Engineer.md'>&amp#x1F9BE Senior DE</a>)
-    B --> D(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Lead_Data_Engineer.md'>&amp#x1F52E Lead DE</a>)
-    B --> C([<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Machine_Learning_Engineer.md'> &amp#x1F47D Machine Learning Engineer</a>])
+    A(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Data_Engineer.md'>:sparkle: Data Engineer</a>) --> B(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Senior_Data_Engineer.md'>:mechanical_arm: Senior DE</a>)
+    B --> D(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Lead_Data_Engineer.md'>:crystal_ball: Lead DE</a>)
+    B --> C([<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Machine_Learning_Engineer.md'>:alien: Machine Learning Engineer</a>])
     C --> D
 ```
 
