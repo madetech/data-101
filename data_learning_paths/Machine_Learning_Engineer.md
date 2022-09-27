@@ -1,20 +1,21 @@
-# ML Engineer Learning Path
+# Machine Learning Engineer Path
 
-This document aims to provide learning resources to help in training for a Machine Learning Engineer. This list is not exhaustive and is simply to help learning some of the core concepts we have around data engineering for that level. We have given a variety of resources from articles to online courses to help with progressing towards completing these learning objectives. You may also prefer hands-on learning, and using a combination of different approaches is recommended. We have also put at the end optional certifications you can pursue to concrete your knowledge. Any comments, feedback or reports of missing/broken links please slack the cop-data channel. 
+This document aims to provide learning resources to help in training for a Machine Learning Engineer. This list is not exhaustive and is simply to help learning some of the core concepts we have around engineering for that level. 
+There is no clear industry definition of ML Engineer and so the role at MT is defined based on expertise within the Data Capability team and the requirements of our clients. 
+
+We have given a variety of resources from articles to online courses to help with progressing towards completing these learning objectives. You may also prefer hands-on learning, and using a combination of different approaches is recommended. We have also put at the end optional certifications you can pursue to concrete your knowledge. Any comments, feedback or reports of missing/broken links please slack the cop-data channel. 
 
 If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
-
-
 ## Understanding the workflow of testing, deployment, and production of ML models.
-
 
 [The elements of data science - aws (course)](https://explore.skillbuilder.aws/learn/course/360/play;state=%5Bobject%20Object%5D;lp=28;autoplay=0)
 
 [Deploying ML models at survey monkey (video)](https://www.youtube.com/watch?v=XsD2u7hAwI8)
 
-Space to add James’ ML workflow
- 
+[Practical MLOps: Operationalizing Machine Learning Models (book)](https://www.amazon.co.uk/Practical-MLOps-Operationalizing-Machine-Learning/dp/1098103017)
+
+[Real-World Machine Learning (book)](https://www.amazon.co.uk/Real-World-Machine-Learning-Henrik-Brink/dp/1617291927)
 
 ## Being able to speak confidently about different ML modelling techniques and the tooling required to achieve this
 
@@ -24,79 +25,77 @@ Space to add James’ ML workflow
 
 [AWS  tooling for ML models (course)](https://explore.skillbuilder.aws/learn/course/325/exploring-the-machine-learning-toolset;lp=28)
 
-[Real-World Machine Learning (book)](https://www.amazon.co.uk/dp/1617291927?tag=learnerblyuk-21&linkCode=ogi&th=1&psc=1)
-
+[AI: A modern Approach (book)](https://www.amazon.com/Artificial-Intelligence-Approach-Stuart-Russell/dp/9332543518/)
 
 ## Ability to combine engineering and data science workflows to deliver a successful ML project
 
-
 [Algorithm fundamentals (course)](https://www.coursera.org/learn/machine-learning)
 
+[ML use cases (course)](https://www.coursera.org/learn/ml-foundations)
 
-Use Cases https://www.coursera.org/learn/ml-foundations
+[Evaluating performance metrics (article)](https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234 )
 
-Performance metrics, deployment, managing drift
-https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234 
-https://machinelearningmastery.com/gentle-introduction-concept-drift-machine-learning/
-https://www.analyticsvidhya.com/blog/2019/10/deployed-machine-learning-model-post-production-monitoring/ 
+[An introduction to drift (article)](https://machinelearningmastery.com/gentle-introduction-concept-drift-machine-learning/)
 
-Courses
-https://aws.amazon.com/training/learn-about/machine-learning/  
+[Post production monitoring (article)](https://www.analyticsvidhya.com/blog/2019/10/deployed-machine-learning-model-post-production-monitoring/ )
 
-https://docs.microsoft.com/en-us/training/roles/ai-engineer
+[AWS machine learning plan (course)](https://aws.amazon.com/training/learn-about/machine-learning/)
 
-## To be able to implement advanced techniques for data analysis and ML
-
+[Microsoft AI plan (course)](https://docs.microsoft.com/en-us/training/roles/ai-engineer )
 
 ## Ability to build architecture using an IaC tool (Terraform, Ansible, CloudFormation) and incorporate CI/CD practices
 
-https://www.amazon.co.uk/Infrastructure-Code-Managing-Servers-Cloud/dp/1491924357
-https://www.thoughtworks.com/en-gb/insights/books/infrastructure-as-code-2nd-edition - infrastructure as code book
+[Infrastructure as Code: Managing Resources in the cloud (book)](https://www.amazon.co.uk/Infrastructure-Code-Managing-Servers-Cloud/dp/1491924357)
 
-Terraform: https://learn.hashicorp.com/terraform 
+[Infrastructure as Code (book)](https://www.thoughtworks.com/en-gb/insights/books/infrastructure-as-code-2nd-edition )
 
-AWS CloudFormation: https://aws.amazon.com/cloudformation/ 
+[Terraform (course)](https://learn.hashicorp.com/terraform)
 
-Azure Resource Manager: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview 
+[AWS Cloud Formation (course)](https://aws.amazon.com/cloudformation/)
 
+[Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
 
 ## Framing ML techniques in a business context to be able to promote adoption across different client organisations
 
-https://cloud.google.com/architecture/guidelines-for-developing-high-quality-ml-solutions - Google advice on 
+[Made Tech guidance on ML workflow](https://github.com/madetech/data-101/blob/main/guides/machine_learning_workflow.md)
 
-https://app.learnerbly.com/resources/d2266c91-315a-49b6-a9fd-19f064e0209a/ - Machine learning product management - A practical guide
+[Machine learning product management - A practical guide (book)](https://app.learnerbly.com/resources/d2266c91-315a-49b6-a9fd-19f064e0209a/)
 
+[Google documentation on ML development (docs)](https://cloud.google.com/architecture/guidelines-for-developing-high-quality-ml-solutions)
 
+## Proficiency in PySpark, Scala and other programming languages to implement a scalable data pipeline, incorporating low event latency and interactive querying, using versioning, monitoring, and testing to ensure reliability.
 
-Proficiency in PySpark, Scala and other programming languages to implement a scalable data pipeline, incorporating low event latency and interactive querying, using versioning, monitoring, and testing to ensure reliability.
+[Spark - The Definitive Guide (book)](https://www.amazon.co.uk/Spark-Definitive-Guide-Bill-Chambers/dp/1491912219)
 
-https://www.guru99.com/pyspark-tutorial.html 
-	(45:29) https://www.youtube.com/watch?v=5inVCagXc2A
+[Data stream processing concepts (video)](https://www.youtube.com/watch?v=5inVCagXc2A)
 
-Pyspark: https://www.udemy.com/course/learn-pyspark/ 
+[PySpark tutorial (docs)](https://www.guru99.com/pyspark-tutorial.html)
 
-https://www.amazon.co.uk/Spark-Definitive-Guide-Bill-Chambers/dp/1491912219 - Spark the definitive guide
+[PySpark by Udemy (course)](https://www.udemy.com/course/learn-pyspark/)
 
-## Proficiency in data science techniques including use of PySpark and other various Python ML libs (TensorFlow, Sci-kit, etc) including visualisation, statistical analysis and model evaluation
+## Ability to implement best practise and use various software packages to visualize, analyze and evaluate ML models and results
 
-ML workflow guide
-https://developers.google.com/machine-learning/guides/rules-of-ml 
+[Google guide to ML workflow (docs)](https://developers.google.com/machine-learning/guides/rules-of-ml)
 
-Google - 10 rules of ML
-https://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf
+[Google - Ten Rules of ML (booklet)](
+https://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)
 
-https://neptune.ai/blog/plotly-python-tutorial-for-machine-learning-specialists - Plotly resource 
+[SparkML documentation (docs)](https://spark.apache.org/docs/1.2.2/ml-guide.html)
 
-https://towardsdatascience.com/data-visualization-for-machine-learning-and-data-science-a45178970be7 - data visualisation using python 
+[TensforFlow documentation (docs)](https://www.tensorflow.org/api_docs )
 
-ML 101
-https://towardsdatascience.com/machine-learning-101-master-ml-66b20003404e
+[Sci-kit Learn documentation (docs)](https://scikit-learn.org/stable/)
 
+[Data visualisartion with Python (article)](https://towardsdatascience.com/data-visualization-for-machine-learning-and-data-science-a45178970be7)
+
+[Plotly documentation (docs)](https://plotly.com/python/)
+
+[Plotly tutorial by Neptune.ai (article)](https://neptune.ai/blog/plotly-python-tutorial-for-machine-learning-specialists )
 
 ## Machine Learning Engineer Certifications
-AWS ML certification - https://aws.amazon.com/certification/certified-machine-learning-specialty/
+[AWS ML Certification](https://aws.amazon.com/certification/certified-machine-learning-specialty/)
 
-Azure AI Engineer Exam - https://learn.microsoft.com/en-us/certifications/azure-ai-engineer/
+[Azure AI Engineer Certification](https://learn.microsoft.com/en-us/certifications/azure-ai-engineer/)
 
-Customer Data Platform Specialty - https://learn.microsoft.com/en-us/certifications/customer-data-platform-specialty/
+[Microsoft Customer Data Platform Specialty](https://learn.microsoft.com/en-us/certifications/customer-data-platform-specialty/)
 
