@@ -2,18 +2,10 @@
 
 Please check out the Data Learning Paths below!
 
-```mermaid 
-flowchart TD;
-    A(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Data_Engineer.md'>:sparkle: Data Engineer</a>) --> B(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Senior_Data_Engineer.md'>:mechanical_arm: Senior DE</a>)
-    B --> D(<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Lead_Data_Engineer.md'>:crystal_ball: Lead DE</a>)
-    B --> C([<a href='https://github.com/madetech/data-101/blob/main/data_learning_paths/Machine_Learning_Engineer.md'>:alien: Machine Learning Engineer</a>])
-    C --> D
-```
-
-<!-- - :sparkle: [Data Engineer](data_learning_paths/Data_Engineer.md)
+- :sparkle: [Data Engineer](data_learning_paths/Data_Engineer.md)
 - :mechanical_arm: [Senior Data Engineer](data_learning_paths/Senior_Data_Engineer.md)
 - :alien: [Machine Learning Engineer](data_learning_paths/Machine_Learning_Engineer.md)
-- :crystal_ball: [Lead Data Engineer](data_learning_paths/Lead_Data_Engineer.md) -->
+- :crystal_ball: [Lead Data Engineer](data_learning_paths/Lead_Data_Engineer.md)
 
 If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
