@@ -1,8 +1,6 @@
 # Data Science for Engineers
 
-This document aims to provide learning resources to help in training for data engineers interested in learning data science methods. This list is not exhaustive and is simply to help learning some of the core concepts. 
-
-It should be noted there is no clear industry definition of a Machine Learning Engineer and so we have defined the following objectives based on expertise within the Data Capability team and the requirements of our clients. 
+This document aims to provide learning resources to help in training for data engineers interested in learning data science methods. The objectives have been defined based on expertise within the Data Capability team and the requirements of our clients, the list is not exhaustive and is simply to help learning some of the core concepts. 
 
 We have given a variety of resources from articles to online courses to help with progressing towards completing these learning objectives. You may also prefer hands-on learning, and using a combination of different approaches is recommended. We have also put at the end optional certifications you can pursue to concrete your knowledge. Any comments, feedback or reports of missing/broken links please slack the cop-data channel. 
 
@@ -18,7 +16,7 @@ If you enjoyed using these learning paths or have feedback, please use this [fee
 
 [Real-World Machine Learning (book)](https://www.amazon.co.uk/Real-World-Machine-Learning-Henrik-Brink/dp/1617291927)
 
-## Being able to speak confidently about different ML modelling techniques and the tooling required to achieve this
+## Being able to speak confidently about different ML modelling techniques and the tooling required to achieve this
 
 [Catalog of ML examples with written reports (github)](https://github.com/SolClover)
 

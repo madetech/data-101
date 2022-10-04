@@ -6,7 +6,7 @@ Please check out the Data Learning Paths below!
 - :mechanical_arm: [Senior Data Engineer](data_learning_paths/Senior_Data_Engineer.md)
 - :crystal_ball: [Lead Data Engineer](data_learning_paths/Lead_Data_Engineer.md)
 
-If you are interested in learning about data science or want to take a step towards become a Machine Learning Engineer we have provided the following document containing useful topics and resources to get you started: 
+If you are interested in learning about data science we have provided the following document containing useful topics and resources to get you started: 
 
 - :alien: [Data Science for Engineers](data_learning_paths/Data_Science_for_Engineers.md)
 
