@@ -1,10 +1,15 @@
 ## Data Learning Paths
 
-Please check out below the Data Learning Paths!
+Please check out the Data Learning Paths below!
 
-- :sparkle: [Data Engineer Learning Objectives](data_learning_paths/Data_Engineer.md)
-- :mechanical_arm: [Senior Data Engineer Learning Objectives](data_learning_paths/Senior_Data_Engineer.md)
-- :crystal_ball: [Lead Data Engineer Learning Objectives](data_learning_paths/Lead_Data_Engineer.md)
+- :sparkle: [Data Engineer](data_learning_paths/Data_Engineer.md)
+- :mechanical_arm: [Senior Data Engineer](data_learning_paths/Senior_Data_Engineer.md)
+- :crystal_ball: [Lead Data Engineer](data_learning_paths/Lead_Data_Engineer.md)
+
+If you are interested in learning about data science we have provided the following document containing useful topics and resources to get you started: 
+
+- :alien: [Data Science for Engineers](data_learning_paths/Data_Science_for_Engineers.md)
+
 
 If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
