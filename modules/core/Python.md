@@ -16,13 +16,27 @@ To begin please run:
 pip install virtualenv
 ```
 
-Then to set up virtual environment:
+If the pip command isn't recognised, try running with pip3 instead:
 
 ```shell
-python3 -m venv {path to new virtual environment}
+pip3 install virtualenv
 ```
 
-The Python 3 venv approach has the benefit of forcing you to choose a specific version of the Python 3 interpreter that should be used to create the virtual environment. 
+Next we will set up the virtual environment.
+
+First, create a folder for your python project.
+
+Then, from the root of the folder, run the following command. In this example, we've called our environment 'testvenv' but you can call it something more relevant if you want.
+
+```shell
+python3 -m venv testvenv
+```
+Now, when you list the contents of the envinroment you just created, you should see something like this:
+
+```shell
+> ls testvenv
+bin        include    lib        pyvenv.cfg
+```
 
 Key features of the project to note is:
 
@@ -32,10 +46,12 @@ include: C headers that compile the Python packages
 
 lib: a copy of the Python version along with a site-packages folder where each dependency is installed
 
+The Python 3 venv approach has the benefit of forcing you to choose a specific version of the Python 3 interpreter that should be used to create the virtual environment. 
+
 To activate your session run this command on your terminal:
 
 ```shell
-source env/bin/activate
+source {name of your environment}/bin/activate
 ```
  
 To deactivate then just run on the terminal:
