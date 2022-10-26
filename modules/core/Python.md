@@ -35,6 +35,7 @@ You can keep these up to date using:
 $ pip install --upgrade pip
 $ pip install --upgrade setuptools
 ```
+*Note: If you are using Python 3 then then you will need to use `python3` and `pip3` by default. This can be changed by updating your `alias`. More infomation can be found [here](https://osxdaily.com/2022/02/15/make-python-3-default-macos/).*
 
 ### Pyenv
 [Pyenv](https://github.com/pyenv/pyenv) is a Python version manager that allows you to install and manage different versions of Python. First we can install this using `brew`.
@@ -102,7 +103,7 @@ Below is outlined how to run up a virtual environment if you installed using Pyt
 
 To begin run:
 ```
-$ pip install virtualenv
+$ pip3 install virtualenv
 ```
 
 Then to set up virtual environment:
@@ -152,20 +153,20 @@ Now you are able to create, spin up and deactivate virtual environments, you can
 *The following commands should be performed within your virtual environment, otherwise you will be installing packages to your system version of Python.*
 ### To install the requirements
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 *Note: This assumes the requirements are held in a file called requirements.txt*
 
 ### Uninstall the requirements
 This is typically not often necessary, however can be useful if you are looking to start fresh:
 ```
-$ pip uninstall -r requirements.txt -y
+$ pip3 uninstall -r requirements.txt -y
 ```
 
 ### Create a requirements file
 Once you are happy with the packages your project needs, or to update the file with any you may have added yourself, run the following command:
 ```
-$ pip freeze -> requirements.txt
+$ pip3 freeze -> requirements.txt
 ```
 
 # Installing PySpark
@@ -176,14 +177,14 @@ $ brew install openjdk@8
 ```
 More information can be found [here](https://spark.apache.org/docs/latest/api/python/getting_started/install.html), however you can then simply run the following command in your desired environment:
 ```
-$ pip install pyspark
+$ pip3 install pyspark
 ```
 If you are looking to install specific dependencies, you can install as shown below:
 ```
 # Spark SQL
-$ pip install pyspark[sql]
+$ pip3 install pyspark[sql]
 # pandas API on Spark
-$ pip install pyspark[pandas_on_spark] plotly  # to plot your data, you can install plotly together.
+$ pip3 install pyspark[pandas_on_spark] plotly  # to plot your data, you can install plotly together.
 ```
 
 ## Delta Tables
