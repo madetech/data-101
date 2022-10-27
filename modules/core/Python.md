@@ -1,7 +1,7 @@
 # Foreword
-The following guide take you through the provisioning of your laptop assuming you are using macOS or Linux, for a windows guide to setting up your devise with python please try [here](https://docs.python.org/3/using/windows.html)
+The following guide take you through the provisioning of your laptop assuming you are using macOS or Linux, for a windows guide to setting up your device with python please try [here](https://docs.python.org/3/using/windows.html)
 # Tutorial: Setting up your Python environment
-When working on a python project it is beneficial to use virtual environments. This ensures that all developers on that project are using the same dependencies and are able to spin up an environment quickly. A virtual python environment segregates project specific packages from your global installed packages.
+When working on a Python project it is typically beneficial to use virtual environments. This massively improves collaboration as it ensures that all developers are working from the same starting point and are able to spin up the project quickly. A virtual python environment segregates project specific packages from your global installed packages.
 
 This guide will cover how best to install python and set up a virtual environment for your project. 
 
@@ -62,17 +62,17 @@ $ pyenv versions
 
 #### Install desired version
 ```
-$ pyenv install 3.5.2
+$ pyenv install <version_number>
 ```
 
 #### Specify global Python version
 ```
-$ pyenv global < version number >
+$ pyenv global <version_number>
 ```
 
 # Creating a virtual environment
 
-virtual environments are an essential tall in development. It ensures that developers are all working from the same point and makes setting up projects far easier. A virtual environment is created on top of an existing Python installation, known as the virtual environment’s “base” Python, and may optionally be isolated from the packages in the base environment, so only those explicitly installed in the virtual environment are available. 
+virtual environments are an essential tool in development. It ensures that developers are all working from the same point and makes setting up projects far easier. Virtual environments are created on top of an existing Python installation, the “base” Python image, and may optionally be isolated from the packages in the base environment, so only those explicitly installed in the virtual environment are available. 
 
 ## Using venv
 Since the v3.3 release Python has a built in `venv` module [link](https://docs.python.org/3/library/venv.html). This is a lightweight virtual environment tool and is very simple to use. 
@@ -99,59 +99,33 @@ $ deactivate
 ```
 
 ## Using Virtualenv
-Below is outlined how to run up a virtual environment if you installed using Python3 (if you are using Python 2 then please refer to this documentation: [virtualenv](https://packaging.python.org/en/latest/key_projects/#virtualenv) but mostly it is swapping venv to virtualenv).   
+The `virtualenv` library is a more feature rich version of the `venv` option discussed above. Among other benefits, it is faster and allows you to specify your base image of Python to be different from your global system version. For a full list of its benefits over `venv`, please read the documentation found [here](https://virtualenv.pypa.io/en/stable/index.html). 
 
-To begin run:
+To use `virtualenv`, first install it to you base Python image:
 ```
 $ pip3 install virtualenv
 ```
+From this point, the main difference in use is the command you use to create the virtual environment. 
 
-If the pip command isn't recognised, try running with pip3 instead:
-
+Navigate to you projects root directory and run:
 ```
-$ python3 -m venv {path to new virtual environment}
+$ python3 -m virtualenv <env_name>
 ```
-
-Next we will set up the virtual environment.
-
-First, create a folder for your python project.
-
-Then, from the root of the folder, run the following command. In this example, we've called our environment 'testvenv' but you can call it something more relevant if you want.
-
-```shell
-python3 -m venv testvenv
+To spin up the environment:
 ```
-Now, when you list the contents of the envinroment you just created, you should see something like this:
-
-```shell
-> ls testvenv
-bin        include    lib        pyvenv.cfg
+$ source <venv>/bin/activate
 ```
-
-Key features of the project to note is:
-
-bin: files that interact with the virtual environment
-
-include: C headers that compile the Python packages
-
-lib: a copy of the Python version along with a site-packages folder where each dependency is installed
-
-The Python 3 venv approach has the benefit of forcing you to choose a specific version of the Python 3 interpreter that should be used to create the virtual environment. 
-
-To activate your session run this command on your terminal:
-
-
+Again, you will be able to see the environment is running because the name of the environment will appear at the start of your command line:
 ```
-$ source env/bin/activate
+$ (<env_name>) Documents/Development/MadeTech/<your_project>
 ```
- 
-To deactivate then just run on the terminal:
+To deactivate:
 
 ```
 $ deactivate
 ``` 
 
-Once activated any python commands run in that session will only affect the virtual environment such as download of packages etc. 
+Once activated any python commands run in that session will only affect the virtual environment such as package installs and updates. 
 
 ## Pipenv & Poetry
 
