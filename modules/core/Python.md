@@ -113,7 +113,7 @@ $ python3 -m virtualenv <env_name>
 ```
 To spin up the environment:
 ```
-$ source <venv>/bin/activate
+$ source <env_name>/bin/activate
 ```
 Again, you will be able to see the environment is running because the name of the environment will appear at the start of your command line:
 ```
