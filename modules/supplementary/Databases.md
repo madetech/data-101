@@ -197,7 +197,11 @@ Four cruial properties define relational database transations: atomicity, consis
 
 
 
-## NoSQL / Unstructured / Semi Structured Databases ![MongoDB_Logo svg (1)](https://user-images.githubusercontent.com/114623144/197126191-c019ad97-872b-4dec-a16b-09f1b4a19063.png)
+## NoSQL Databases ![MongoDB_Logo svg (1)](https://user-images.githubusercontent.com/114623144/197126191-c019ad97-872b-4dec-a16b-09f1b4a19063.png) <img width="248" alt="image" src="https://user-images.githubusercontent.com/114578618/198977802-62537bc9-2369-47db-bb70-73857bc85363.png"> <img width="183" alt="image" src="https://user-images.githubusercontent.com/114578618/198978938-06853cd8-6dc7-428d-9d17-dc87d25c9f87.png">
+
+
+
+
 
 
 NoSQL Database is a non-relational Data Management System that does not require a fixed schema. It avoids joins and is easy to scale. 
