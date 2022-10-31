@@ -35,7 +35,7 @@ To expand upon the core learning modules please check out the learning objective
 
 - :scream_cat: [SQL](modules/supplementary/SQL.md)
 - :computer: [Terraform](modules/supplementary/Terraform.md)
-- :floppy_disk: [Databases](modules/supplementary/Database.md)
+- :floppy_disk: [Databases](modules/supplementary/Databases.md)
 
 
 ## Contributing to data-101
