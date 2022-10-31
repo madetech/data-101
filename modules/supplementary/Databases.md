@@ -2,7 +2,7 @@
 
 ## Relational Databases ![mysqldownload](https://user-images.githubusercontent.com/114578618/195858167-b4ae6082-d376-44f2-951e-f762d1d07594.png)![ms3download](https://user-images.githubusercontent.com/114578618/195859896-602ebada-d592-4421-8558-b38c4f4f6e9b.png)![pgsdownload](https://user-images.githubusercontent.com/114578618/195858073-de817956-6540-423b-ad0c-d0c9f196539d.png)
 
-Databases are efficient ways of storing and managing data. Databases store organised or structured data using relational model which stores data in two dimensional format like tables, represented in rows and columns
+Databases are efficient ways of storing and managing data. Databases store organised or structured data using a relational model which stores data in two dimensional format like tables, represented in rows and columns
 
 Each row in a table represents a single record with unique ID called Key. A record is a meaningful and consistent way of combining information about something.  
 A column represents a field of attribute or an item of information. 
@@ -21,7 +21,7 @@ Examples of relational database management system are: Microsoft sql server, myS
 
 ## What is a schema 
 
-This is the way a database is structured. Schema's are a formal description of the organisation and structure of data in a database. This includes definition of tables, views, columns, data types, indexes, constraints,relationships, etc. Schemas are important for consistency and efficiency. Databases work With schema's.
+This is the way a database is structured. Schema's are a formal description of the organisation and structure of data in a database. This includes definition of tables, views, columns, data types, indexes, constraints,relationships, etc. Schemas are important for consistency and efficiency. Databases work with schema's.
 
 Relational databases have schema's while non relational databases like NoSql databases e.g. MongoDB are schema-less.
 
@@ -241,7 +241,63 @@ Traditional RDBMS uses SQL syntax to store and retrieve data for further insight
  
  ![image](https://user-images.githubusercontent.com/114623144/197124279-053e13c0-fd18-4213-9674-502cf032278e.png)
 
+## SQL vs NoSQL Databases
 
+<img width="521" alt="sqlvsnosql" src="https://user-images.githubusercontent.com/114578618/198925782-1c7bc13c-9078-44e2-8586-25eee312f550.png">
+
+✔️Architecturtal differences:
+
+RDBMS scales up, also known as vertical scalling in order to increase capacity. This will typically involve adding expensive hardware, faster CPUs, more Ram, etc..
+NoSQL in contrast scales out, also known as horizontal scalling. As NoSQL databases are designed for low latency and high resilience, built to run across clusters of distributed nodes. Scaling out will simply involve adding more nodes
+
+
+✔️Replication: 
+
+Replicating data across multiple nodes allows databases to achieve higher levels of resilience. In the RDBMS world, it’s not trivial to replicate data across multiple instances. Relational databases do not support replication. Instead, they rely on external tools to extract and update copies of datasets. 
+
+NoSQL databases provide native support for data replication, they follow three basic models: multi-master databases, such as DynamoDB, master-slave architectures, such as MongoDB, and masterless, such as Scylla. 
+
+✔️Application driven use case: 
+
+NoSQL databases have been driven by uptake from developers who find it easier to create applications compared to relational databases as RDBMS impose fairly rigid, schema-based structures to data models.
+
+## NoSQL database types
+
+NoSQL databases are mainly categorized into four types: Key-value pair, Column-oriented, Graph-based and Document-oriented. 
+Every category has its unique attributes and limitations. None of the above-specified database is better to solve all the problems. Users will select the database based on their product needs.
+
+	•	Key-value 
+	•	Column
+	•	Graphs
+	•	Document
+  
+<img width="264" alt="image" src="https://user-images.githubusercontent.com/114578618/198932170-9507c28d-4413-4fd2-9849-8fb1d31e80de.png">
+
+1. Key Value Pair Based
+  Data is stored in key/value pairs. It is designed in such a way to handle lots of data and heavy load.
+  Key-value pair storage databases store data as a hash table where each key is unique, and the value can be a JSON, BLOB(Binary Large Objects), string,     etc. This kind of NoSQL database is used as a collection, dictionaries, associative arrays, etc. 
+  Uses: shopping cart content, 
+  Example databases are Redis, Dynamo, Riak
+
+
+2.  Column-based
+    Column-oriented databases work on columns. Every column is treated separately. Values of single column databases are stored contiguously.
+    column oriented databases deliver high performance on aggregation queries like SUM, COUNT, AVG, MIN etc, as the data is readily available in a column.
+    Uses: Datawarehouses
+    Example: HBase, Cassandra, Amazon Redshift
+
+
+3.  Document-Oriented
+    Document-Oriented NoSQL DB stores data as JSON or XML formats. So in the document data model, each document has a key-value pair 
+    Uses: Catalogs, content management
+    Example: Amazon DocumentDB, MongoDB
+  
+
+4.  Graph-Based
+    A graph type database stores entities as well the relations amongst those entities. The entity is stored as a node with the relationship as edges. An     edge gives a relationship between nodes. Every node and edge has a unique identifier. Compared to a relational database where tables are loosely           connected, a Graph database is a multi-relational in nature. Traversing relationship is fast as they are already captured into the DB, and there is no     need to calculate them.
+    Uses: mostly used for social networks, logistics, spatial data.
+    Examples: Neo4J, Infinite Graph, OrientDB.
+    
 ## Query Mechanism tools for NoSQL
 
 The most common data retrieval mechanism is the REST-based retrieval of a value based on its key/ID with GET resource
