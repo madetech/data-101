@@ -24,18 +24,27 @@ To expand upon the core learning modules please check out the learning objective
 
 ![Learning pathway diagram](https://github.com/madetech/data-101/blob/main/images/learningpathway.png?raw=true)
 
-## Core learning path
+# Core
 
-1. :snake: [Python, pip, pyenv](modules/core/Python.md)
-2. :panda_face: [Pandas - introduction to data loading & transformations](modules/core/Pandas.md) 
-3. :sparkler: [Spark - Putting the **big** in *big data*](modules/core/Spark.md)
+## Python
+ - :snake: [Python, pip, pyenv](modules/core/Python.md)
+
+### Modules
+ - :panda_face: [Pandas - Introduction to data loading & transformations](modules/core/Python%20modules/Pandas.md) 
+ -  :globe: [GeoPandas - Plotting spatial data](modules/core/Python%20modules/geopandas.md)
+
+## Spark
+ - :sparkler: [Spark - Putting the **big** in *big data*](modules/core/Spark.md)
 
 
-## Supplementary learning modules
+# Supplementary learning
 
 - :scream_cat: [SQL](modules/supplementary/SQL.md)
 - :computer: [Terraform](modules/supplementary/Terraform.md)
 - :floppy_disk: [Databases](modules/supplementary/Databases.md)
+
+# Guides
+ - :robot: [Machine Learning Workflow: A guide for DMs](guides/machine_learning_workflow.md)
 
 
 ## Contributing to data-101
