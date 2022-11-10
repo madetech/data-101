@@ -14,7 +14,7 @@ If you are interested in learning about data science we have provided the follow
 If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
 
-# data-101: An introduction to big data in Made Tech (basic tutorial)
+# Data-101: An introduction to big data in Made Tech (basic tutorial)
 
 Welcome to the data-101 intro section!
 
