@@ -2,9 +2,16 @@
 ## What is Terraform
 Terraform allows you to automate and manage your infrastructure and your platform and services that run on that platform. 
 
-Infrastructure as Code with Terraform allows you to manage infrastructure with configuration files rather than through a graphical user interface.
+Infrastructure as Code with Terraform allows you to manage infrastructure with configuration files rather than through a graphical user interface.IaC allows you to build, change, and manage your infrastructure in a safe, consistent, and repeatable way by defining resource configurations that you can version, reuse, and share.
 
-## Install Terraform on Mac
+Using Terraform has several advantages over manually managing your infrastructure:
+
+* Terraform can manage infrastructure on multiple cloud platforms.
+* The human-readable configuration language helps you write infrastructure code quickly.
+* Terraform's state allows you to track resource changes throughout your deployments.
+* You can commit your configurations to version control to safely collaborate on infrastructure.
+
+## Install Terraform on Mac OS
 First, install the HashiCorp tap, a repository of all our Homebrew packages.
 
 ```
@@ -38,6 +45,21 @@ terraform -help
 1. **Initialize** prepares the working directory so Terraform can run the configuration.
 2. **Plan** enables you to preview any changes before you apply them.
 3. **Apply** makes the changes defined by your Terraform configuration to create, update, or destroy resources.
+
+- visual elements to see what Terraform is deploying
+- explain files (like state file)
+- best practices (state file needs to be in a shared space)
+- how to reference variables
+- what is a provider?
+Terraform plugins called providers let Terraform interact with cloud platforms and other services via their application programming interfaces (APIs). HashiCorp and the Terraform community have written over 1,000 providers to manage resources on Amazon Web Services (AWS), Azure, Google Cloud Platform (GCP), Kubernetes, Helm, GitHub, Splunk, and DataDog, just to name a few. Find providers for many of the platforms and services you already use in the [Terraform Registry](https://registry.terraform.io/browse/providers). If you don't find the provider you're looking for, you can write your own.
+Providers are a logical abstraction of an upstream API. They are responsible for understanding API interactions and exposing resources.
+
+
+![Terraform deployment workflow](images/terraform.png)
+
+## Why Terrraform?
+- why is Terraform good for CI/CD?
+
 
 ## Quick start tutorial with Docker
 
