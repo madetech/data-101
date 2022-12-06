@@ -2,7 +2,7 @@
 
 This document aims to provide learning resources to help in training for an advanced Data Engineer. This list is not exhaustive and is simply to help learning some of the core concepts we have around data engineering for that level. We have given a variety of resources from articles to online courses to help with progressing towards completing these learning objectives. We have also put at the end optional certifications you can pursue to concrete your knowledge. Any comments, feedback or reports of missing/broken links please slack the cop-data channel. 
 
-If you enjoyed using these learning paths or have feedack, please use this [feedback form](https://madetech.typeform.com/datalearning)
+If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
 ## Develops optimal collection and data strategies, applying different capture techniques, determining types of data to optimise processes
 
@@ -74,7 +74,7 @@ If you enjoyed using these learning paths or have feedack, please use this [feed
 
 Please refer to [Senior Data Engineer document](Senior_Data_Engineer.md) for additional supplementary certifications
 
-[Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)]
+[Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)
 
 [Databricks Certified Data Engineer Professional](https://databricks.com/learn/certification/data-engineer-professional)
 

@@ -8,10 +8,11 @@ These are split to beginner -> advanced data concepts to aid in self development
 - :mechanical_arm: [Data 102 Learning Objectives](data_learning_paths/data_102.md)
 - :crystal_ball: [Data 103 Learning Objectives](data_learning_paths/data_103.md)
 
-If you enjoyed using these learning paths or have feedack, please use this [feedback form](https://madetech.typeform.com/datalearning)
+If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
+If you are interested in learning about data science we have provided the following document containing useful topics and resources to get you started: 
 
-# data-101: An introduction to big data in Made Tech (basic tutorial)
+# Data-101: An introduction to big data in Made Tech (basic tutorial)
 
 Welcome to the data-101 intro section!
 
@@ -21,18 +22,27 @@ To expand upon the core learning modules please check out the learning objective
 
 ![Learning pathway diagram](https://github.com/madetech/data-101/blob/main/images/learningpathway.png?raw=true)
 
-## Core learning path
+# Core
 
-1. :snake: [Python, pip, pyenv](modules/core/Python.md)
-2. :panda_face: [Pandas - introduction to data loading & transformations](modules/core/Pandas.md) 
-3. :sparkler: [Spark - Putting the **big** in *big data*](modules/core/Spark.md)
+## Python
+ - :snake: [Python, pip, pyenv](modules/core/Python.md)
+
+### Modules
+ - :panda_face: [Pandas - Introduction to data loading & transformations](modules/core/Python%20modules/Pandas.md) 
+ -  :globe: [GeoPandas - Plotting spatial data](modules/core/Python%20modules/geopandas.md)
+
+## Spark
+ - :sparkler: [Spark - Putting the **big** in *big data*](modules/core/Spark.md)
 
 
-## Supplementary learning modules
+# Supplementary learning
 
 - :scream_cat: [SQL](modules/supplementary/SQL.md)
 - :computer: [Terraform](modules/supplementary/Terraform.md)
-- :floppy_disk: [Databases](modules/supplementary/Database.md)
+- :floppy_disk: [Databases](modules/supplementary/Databases.md)
+
+# Guides
+ - :robot: [Machine Learning Workflow: A guide for DMs](guides/machine_learning_workflow.md)
 
 
 ## Contributing to data-101
