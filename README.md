@@ -2,9 +2,11 @@
 
 Please check out below the Data Learning Paths!
 
-- :sparkle: [Data Engineer Learning Objectives](data_learning_paths/Data_Engineer.md)
-- :mechanical_arm: [Senior Data Engineer Learning Objectives](data_learning_paths/Senior_Data_Engineer.md)
-- :crystal_ball: [Lead Data Engineer Learning Objectives](data_learning_paths/Lead_Data_Engineer.md)
+These are split to beginner -> advanced data concepts to aid in self development. 
+
+- :sparkle: [Data 101 Learning Objectives](data_learning_paths/data_101.md)
+- :mechanical_arm: [Data 102 Learning Objectives](data_learning_paths/data_102.md)
+- :crystal_ball: [Data 103 Learning Objectives](data_learning_paths/data_103.md)
 
 If you enjoyed using these learning paths or have feedack, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
