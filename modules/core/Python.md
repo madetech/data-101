@@ -13,7 +13,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 ```
 
 # Installing Python
-Both macOS and Linus ship with [Python](https://www.python.org) already installed. However, given some system tools rely on this, it is not advisable to mess with these. Instead we should install our own version(s), upon which we can build our projects. This document will cover two methods for installing Python versions, Homebrew and Pyenv. 
+Both macOS and Linux ship with [Python](https://www.python.org) already installed. However, given some system tools rely on this, it is not advisable to mess with these. Instead we should install our own version(s), upon which we can build our projects. This document will cover two methods for installing Python versions, Homebrew and Pyenv. 
 
 
 ### Homebrew Python
