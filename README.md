@@ -29,7 +29,7 @@ To expand upon the core learning modules please check out the learning objective
 
 ### Modules
  - :panda_face: [Pandas - Introduction to data loading & transformations](modules/core/Python%20modules/Pandas.md) 
- -  :globe: [GeoPandas - Plotting spatial data](modules/core/Python%20modules/geopandas.md)
+ - :earth_africa: [GeoPandas - Plotting spatial data](modules/core/Python%20modules/geopandas.md)
 
 ## Spark
  - :sparkler: [Spark - Putting the **big** in *big data*](modules/core/Spark.md)
