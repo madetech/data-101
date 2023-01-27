@@ -30,7 +30,7 @@ To depoly infrastructure with terraform:
 4. **Plan** - enables you to preview any changes before you apply them.
 5. **Apply** - makes the changes defined by your Terraform configuration to create, update, or destroy resources.
 
-### Important concepts
+## Important concepts
 
 Terraform plugins called **providers** let Terraform interact with cloud platforms and other services via their application programming interfaces (APIs). Terraform has over 1,000 providers to manage resources on Amazon Web Services (AWS), Azure, Google Cloud Platform (GCP) etc. 
 
