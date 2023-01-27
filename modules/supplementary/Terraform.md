@@ -155,7 +155,7 @@ You've now provisioned and destroyed an NGINX webserver with Terraform.
 
 ## Useful commands in Terraform
 
-![Terraform-cheatsheet](https://github.com/madetech/data-101/blob/terraform-tutorial/images/terraform-cheatsheet-1.png)
+![Terraform-cheatsheet](https://github.com/madetech/data-101/blob/terraform-tutorial/images/terraform-cheatsheet.png)
 
 
 ### Next:
