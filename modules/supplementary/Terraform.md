@@ -1,9 +1,13 @@
 # Terraform
-## What is Terraform
-Terraform allows you to automate and manage your infrastructure and your platform and services that run on that platform. 
 
-Infrastructure as Code with Terraform allows you to manage infrastructure with configuration files rather than through a graphical user interface.
-IaC allows you to build, change, and manage your infrastructure in a safe, consistent, and repeatable way by defining resource configurations that you can version, reuse, and share.
+## Infrasctructure as Code
+
+Infrastructure as code (IaC) is used to automate infrastructure deployment and streamline application development. IaC allows you to build, change, and manage your infrastructure in a safe, consistent, and repeatable way by defining resource configurations that you can version, reuse, and share.
+There are multiple tools for using IaC to automate resource allocation, here are some examples: HashiCorp Terraform, AWS CloudFormation, Google Cloud Depolyment Manager, Microsoft Azure Resource Manager etc. This [article](https://www.techtarget.com/searchdatacenter/feature/IaC-tools-comparison-shows-benefits-of-automated-deployments) provides a comparison between multiple tools.
+
+## What is Terraform?
+
+Terraform allows you to automate and manage your infrastructure and your platform and services that run on that platform. Infrastructure as Code with Terraform allows you to manage infrastructure with configuration files rather than through a graphical user interface. Terraform is open-source and it uses declarative language, which means you'll only need to define what your end result should be. 
 
 Using Terraform has several advantages over manually managing your infrastructure:
 
@@ -12,37 +16,12 @@ Using Terraform has several advantages over manually managing your infrastructur
 * Terraform's state allows you to track resource changes throughout your deployments.
 * You can commit your configurations to version control to safely collaborate on infrastructure.
 
-## Install Terraform on Mac OS
-First, install the HashiCorp tap, a repository of all our Homebrew packages.
-
-```
-brew tap hashicorp/tap
-```
-
-Now, install Terraform with hashicorp/tap/terraform.
-
-```
-brew install hashicorp/tap/terraform
-```
-
-NOTE: This installs a signed binary and is automatically updated with every new official release.
-
-To update to the latest version of Terraform, first update Homebrew.
-```
-brew update
-```
-
-Then, run the upgrade command to download and use the latest Terraform version.
-```
-brew upgrade hashicorp/tap/terraform
-```
-
-Verify the installation:
-```
-terraform -help
-```
-
 ## Terraform workflow:
+
+Terraform generates an execution plan that shows the changes that will be applied to the infrastructure before committing those changes. Terraform can determine what has changed in a configuration and create incremental execution plans that users can apply. 
+
+![Terraform workflow](https://github.com/madetech/data-101/blob/main/images/terraform-workflow.png?raw=true)
+
 1. **Initialize** prepares the working directory so Terraform can run the configuration.
 2. **Plan** enables you to preview any changes before you apply them.
 3. **Apply** makes the changes defined by your Terraform configuration to create, update, or destroy resources.
@@ -73,6 +52,36 @@ You can also connect Terraform Cloud to version control systems (VCSs) like GitH
 ## Why Terrraform?
 - why is Terraform good for CI/CD?
 
+
+## Install Terraform on Mac OS
+First, install the HashiCorp tap, a repository of all our Homebrew packages.
+
+```
+brew tap hashicorp/tap
+```
+
+Now, install Terraform with hashicorp/tap/terraform.
+
+```
+brew install hashicorp/tap/terraform
+```
+
+NOTE: This installs a signed binary and is automatically updated with every new official release.
+
+To update to the latest version of Terraform, first update Homebrew.
+```
+brew update
+```
+
+Then, run the upgrade command to download and use the latest Terraform version.
+```
+brew upgrade hashicorp/tap/terraform
+```
+
+Verify the installation:
+```
+terraform -help
+```
 
 ## Quick start tutorial with Docker
 
@@ -144,79 +153,10 @@ terraform destroy
 ```
 You've now provisioned and destroyed an NGINX webserver with Terraform.
 
-# Name of directory
-## The Scenario
-This code extends the tutorial found at [Hashicorp](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started), which deploys a docker container called 'Tutorial' running an nginx instance, by mounting a volume to load custom HTML content and an image.
+## Useful commands in Terraform
 
-## Pre-requisites
-- Terraform (v12.0+) - this can be found by going to the [hashicorp](https://github.com/ned1313/Getting-Started-Terraform) website. 
-- Docker Desktop (Or at least Docker installed and configured locally) - instructions on installing this and setting up can be found at the [Docker website](https://docs.docker.com/get-docker/).
-- Populating a tfvars file as explained in the variables section.
+![Terraform-cheatsheet](https://github.com/madetech/data-101/blob/terraform-tutorial/images/terraform-cheatsheet-1.png)
 
-## Content overview
----If you add any content on commit, please update the README below accordindly---
-Please use the headers below to list:
-- ![#808080](https://via.placeholder.com/15/808080/000000?text=+) `Directory Structure - file layout with brief descriptions of contents`
-- ![#800080](https://via.placeholder.com/15/800080/000000?text=+) `Terraform Functions - List any featuring in configuration`
-- ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `Configuration contents - Variables, Providers, Locals, Modules, Data, Resources and Output information`
-
-## How to use this configuration
-
-### Terraform commands sequence
-1) `terraform init` - Terraform requires initialisation at the command level.
-2) `terraform validate` - This will check to make sure you're configuration is valid.
-3) `terraform plan -out docker<name>.tfplan` - This will create a plan of proposed deployments, feel free to check the output. (example name: dockerjohn.tfplan)
-4) `terraform apply "docker<name>.tfplan"` - This will apply the plan proposed above and actually build your infrastructure. (example name: dockerjohn.tfplan)
-5) (OPTIONAL) `docker ps -f name=tutorial --format 'table {{.Names}}\t{{.Status}}'` - This command will confirm if the container has been created and how long for
-6) `terraform destroy` - When you are done, you can use this to delete everything you created
-
-### Successful deployment conditions
-The console will output a URL, which can be retrieved again with `terraform output`.
-You will know if you successfully deployed it when you can reach the HTML within this directory, being run by an nginx instance. This will be true across all container instances.
-
-### Directory Structure
-```diff
-# html/index.html <- the Html file to be loaded>
-# html/Companies_House_logo.png <- An image to accompany the html file>
-# README.md <- What you're reading now, please update if you make changes>
-# main.tf <- The configuration >
-# terraform.tfvars.example
-```
-
-### Terraform functions
-These are specific functions that the terraform language understands, and have appropriate documentation on the [terraform functions website](https://www.terraform.io/docs/language/functions)
-```diff
-@@ .rendered - used in data.template_file.ports[*].rendered which is a special terraform attribute to return a list from a template file. Its the primary way to get around the lack of count support in outputs @@
-```
-
-### Configuration contents
-
-#### Variables
-You can set these within a terraform.tfvars file (see the example provided). Please do not remove or change the default values (as it wouldn't adhere to our terraform standards)
-* host_path - String - REQUIRED - the path in your local directory, sourced from a tfvars file, where you want content to be loaded from.
-* external_port_prefix - Number - OPTIONAL - the port attached to localhost for the nginx front end, defaulted at 800
-* docker_container_name - String - OPTIONAL - whatever name you want to call the container, as a String
-* instance_count - Number - OPTIONAL - the number of containers to spin up
-
-#### Providers
-* docker
-
-#### Locals
-None
-
-#### Data
-* ports <- This is to specify all the ports that will be used for the containers. Necessary for dns_entries to return a list>
-
-#### Modules
-None
-
-#### Resources
-* docker_image <- This is to specify which Docker Image we are to build from and is used in the next resource>
-* docker_container <- This is the container itself and it's configuration. It has volume mounting enabled>
-
-#### Outputs
-* dns_entries <- A list of the DNS addresses needed, dynamically generated with a special terraform function>
-* docker_process_checker <- A useful command line function to ensure your container has been built>
 
 ### Next:
 [Terraform with AWS](Terraform_AWS.md)
