@@ -20,7 +20,7 @@ Using Terraform has several advantages over manually managing your infrastructur
 
 Terraform generates an execution plan that shows the changes that will be applied to the infrastructure before committing those changes. Terraform can determine what has changed in a configuration and create incremental execution plans that users can apply. 
 
-![Terraform workflow](images/terraform-workflow.png)
+![Terraform workflow](../../images/terraform-workflow.png)
 
 To depoly infrastructure with terraform: 
 
@@ -142,7 +142,7 @@ You've now provisioned and destroyed an NGINX webserver with Terraform.
 
 ## Useful commands in Terraform
 
-![Terraform-cheatsheet](images/terraform-cheatsheet.png)
+![Terraform-cheatsheet](../../images/terraform-cheatsheet.png)
 
 
 ### References:
