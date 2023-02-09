@@ -7,6 +7,7 @@ These are split to beginner -> advanced data concepts to aid in self development
 - :sparkle: [Data 101 Learning Objectives](data_learning_paths/data_101.md)
 - :mechanical_arm: [Data 102 Learning Objectives](data_learning_paths/data_102.md)
 - :crystal_ball: [Data 103 Learning Objectives](data_learning_paths/data_103.md)
+- :floppy_disk: [Cert paths](data_learning_paths/certs.md)
 
 If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
