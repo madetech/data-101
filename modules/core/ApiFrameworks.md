@@ -68,8 +68,6 @@ FastAPI is a modern webserver framework, utilizing python type-hints for runtime
 
 By using standard python type hints for runtime Request Response validation, it allows a single source of truth for the structure of the data to be represented in a human-readable way at the function level, making inconsistencies easier to pick up in advance using tools such as mypy/pyright in an IDE, and adding a justification for keeping these type hints up-to-date
 
-<!-- #### Generates OpenAPI documentation out of the box -->
-
 ### Disadvantages of FastAPI
 
 #### Asynchronous methods can only easily call other asynchronous methods
