@@ -2,7 +2,7 @@
 
 Please check out below the Data Learning Paths!
 
-These are split to beginner -> advanced data concepts to aid in self development. 
+These are split to beginner -> advanced data concepts to aid in self development.
 
 - :sparkle: [Data 101 Learning Objectives](data_learning_paths/data_101.md)
 - :mechanical_arm: [Data 102 Learning Objectives](data_learning_paths/data_102.md)
@@ -11,7 +11,7 @@ These are split to beginner -> advanced data concepts to aid in self development
 
 If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
 
-If you are interested in learning about data science we have provided the following document containing useful topics and resources to get you started: 
+If you are interested in learning about data science we have provided the following document containing useful topics and resources to get you started:
 
 # Data-101: An introduction to big data in Made Tech (basic tutorial)
 
@@ -27,9 +27,10 @@ To expand upon the core learning modules please check out the learning objective
 
 ## Python
  - :snake: [Python, pip, pyenv](modules/core/Python.md)
+ - :satellite: [API Frameworks - Flask, fastAPI, Django](modules/core/ApiFrameworks.md)
 
 ### Modules
- - :panda_face: [Pandas - Introduction to data loading & transformations](modules/core/Python%20modules/Pandas.md) 
+ - :panda_face: [Pandas - Introduction to data loading & transformations](modules/core/Python%20modules/Pandas.md)
  - :earth_africa: [GeoPandas - Plotting spatial data](modules/core/Python%20modules/geopandas.md)
 
 ## Spark
