@@ -10,7 +10,7 @@ Then we define the samples that we use for the training task, i.e. $x^{(i)} ∈ 
 Now, for a given task with training set ${(x^{(i)},y^{(i)})}^N_{i=1}$, we want to find the function $f : X → Y$, whilst defining the loss function $L f(x), y$. The loss function can sometimes be thought of as a function that computes the error between the model’s estimates and the ground truth.
 
 
-The basic process for supervised learning is as following:
+### The basic process for supervised learning is as follows:
 
 (1) Start with data $(x^{(i)}, y^{(i)}), i = 1, . . . , N$.
 
@@ -18,15 +18,23 @@ The basic process for supervised learning is as following:
 
 (3) Define a loss function $L(y, f(x))$
 
-(4) Minimise the mean sample loss: ![Mean sample loss](./images/mean-sample-loss.png)
+(4) Minimise the mean sample loss: 
 
-(5) Try to also achieve a reasonable expected test loss: ![Expected test loss](./images/expected-test-loss.png)
+![Mean sample loss](./images/mean-sample-loss.png)
+
+(5) Try to also achieve a reasonable expected test loss: 
+
+![Expected test loss](./images/expected-test-loss.png)
 
  
-In general, the solution for $f$ will be the result of some form of optimisation, minimising the in-sample loss (error) $L$. That is to say, we are aiming to minimise the following: ![Optimisation](./images/optimisation.png)
+In general, the solution for $f$ will be the result of some form of optimisation, minimising the in-sample loss (error) $L$. That is to say, we are aiming to minimise the following: 
+
+![Optimisation](./images/optimisation.png)
 
  
-However, we also want to avoid over-fitting, i.e. obtaining a model that fits the training data perfectly, but will not perform well on unseen data. This means that we need to ensure that the expected out-of-sample loss test is also small: ![Overfitting](./images/overfitting.png)
+However, we also want to avoid over-fitting, i.e. obtaining a model that fits the training data perfectly, but will not perform well on unseen data. This means that we need to ensure that the expected out-of-sample loss test is also small: 
+
+![Overfitting](./images/overfitting.png)
 
 This desirable property is also known as *generalisability*.
 
