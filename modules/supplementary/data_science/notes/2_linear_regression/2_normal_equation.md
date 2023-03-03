@@ -16,11 +16,9 @@ where the vector $β$ contains the $(p + 1)$ parameters of the model, which need
 
 ![Vector B](./images/vector-b.png)
 
-
 For every point in our data, we will then have a predicted value
 
 ![predicted value](./images/predicted-value.png)
-
 
 Ideally, we would want to find the values of the parameters $β$ such that the prediction $\hat{y} (i)$ is equal to the observation $y (i)$ for every single data point:
 
@@ -36,12 +34,12 @@ So $N × 1$ vector of predicted values $\hat{y}$ is given by:
 Since we want to find the parameters such that prediction and observations are close, we need to quantify the error of our model: 
     $e = y − \hat{y} = y − Xβ$. 
 
-The meaning of the error is clear in Figure 2.1. The vector $e_{N×1}$ contains all the deviations between the predicted values and the observed outcomes.
+The error is illustrated in Figure 2.1. The vector $e_{N×1}$ contains all the deviations between the predicted values and the observed outcomes.
 
 ![Figure 21](./images/figure21.png)
 
 
-Least squares finds a solution of an associated system that minimises the mean squared error (MSE) (2.1). In our matrix-vector notation, the MSE can be written compactly as: 
+Least squares finds a solution of an associated system that minimises the mean squared error (MSE). In our matrix-vector notation, the MSE can be written compactly as: 
 
 ![mean squared error](./images/MSE.png)
 
