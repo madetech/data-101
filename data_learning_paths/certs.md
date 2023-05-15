@@ -1,6 +1,6 @@
 # Certificate Paths
 
-Please reach out to Jonathan Griffin (Made Tech Head of Strategic Partnerships) for detailed breakdown of particular cert paths and additional resources
+Please reach out to L&D for a detailed breakdown of particular cert paths and additional resources
 
 # Cert Path for AWS
 
