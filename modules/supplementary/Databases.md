@@ -2,14 +2,14 @@
 
 ## Relational Databases ![mysqldownload](https://user-images.githubusercontent.com/114578618/195858167-b4ae6082-d376-44f2-951e-f762d1d07594.png)![ms3download](https://user-images.githubusercontent.com/114578618/195859896-602ebada-d592-4421-8558-b38c4f4f6e9b.png)![pgsdownload](https://user-images.githubusercontent.com/114578618/195858073-de817956-6540-423b-ad0c-d0c9f196539d.png)
 
-Databases are efficient ways of storing and managing data. Databases store organised or structured data using a relational model which stores data in two dimensional format like tables, represented in rows and columns
+Databases are efficient ways of storing and managing data. Databases store organised or structured data using a relational model which stores data in a two dimensional format like tables, represented in rows and columns
 
 Each row in a table represents a single record with unique ID called Key. A record is a meaningful and consistent way of combining information about something.  
-A column represents a field of attribute or an item of information. 
+A column represents a field or attribute of an item of information. 
 
-Relational database management systems also known as RDBMS are softwares used to create and manage databases.
+Relational database management systems, also known as RDBMS, are softwares used to create and manage databases.
 
-Structured Query Language also called SQL is the Language used to talk to databases. Functions like Create, Read, Update and Delete are some of the basic functions in perfomed in a Relational Database Management System.
+Structured Query Language, also called SQL, is the Language used to talk to databases. Functions like Create, Read, Update and Delete are some of the basic functions performed in a Relational Database Management System.
 
 Data in a database could be consumed by applications ( e.g Reporting Application like Power BI) or directly queried by people
 
@@ -21,13 +21,13 @@ Examples of relational database management system are: Microsoft sql server, myS
 
 ## What is a schema 
 
-This is the way a database is structured. Schema's are a formal description of the organisation and structure of data in a database. This includes definition of tables, views, columns, data types, indexes, constraints,relationships, etc. Schemas are important for consistency and efficiency. Databases work with schema's.
+This is the way a database is structured. Schema's are a formal description of the organisation and structure of data in a database. This includes definitions of tables, views, columns, data types, indexes, constraints,relationships, etc. Schemas are important for consistency and efficiency. Databases work with schema's.
 
-Relational databases have schema's while non relational databases like NoSql databases e.g. MongoDB are schema-less.
+Relational databases have schema's while non relational databases like NoSql databases (e.g. MongoDB) are schema-less.
 
 ## What is a table
 
-A colletion of related data held in rows and columns. Data within databases are held in tables.
+A collection of related data held in rows and columns. Data within databases are held in tables.
 
                     CREATE TABLE Persons (
                      PersonID int,
@@ -42,37 +42,32 @@ A colletion of related data held in rows and columns. Data within databases are 
 
  ✔️ A good database is one with no duplicate information or duplication is to kept to very minimum. 
  
-      Duplicate data also called redundant data is bad for databases. It wastes spaces and
-      increases the posibility of errors
+      Duplicate data also called redundant data is bad for databases. It wastes spaces and increases the possibility of errors
 
-✔️ A good database has Information sub divided into broad subject areas.
+✔️ A good database has information sub divided into broad subject areas.
 
-      Example subject areas are: Product, Customer.etc.. This will help to reduce data redundancy
+      Example subject areas are: Product, Customer etc.. This will help to reduce data redundancy
 
-✔️ A good database accomodates data processing and reporting needs.
+✔️ A good database accommodates data processing and reporting needs.
       
-      A good way of tackling this will be to plan ahead for the purpose of the database, ensuring all
-      reporting needs are met
+      A good way of tackling this will be to plan ahead for the purpose of the database, ensuring all reporting needs are met
 
 ✔️ A good database ensure correctness and completeness of information. 
 
-    This value of a database is in the information it holds. If a database does not contain correct
-    information, any report that pulls information from it will also be incorrect.
+    The value of a database is in the information it holds. If a database does not contain correct information, any report that pulls information from it will also be incorrect.
   
 ##  Database design 🖌️
 
-Database design is the process of organizing, classifying and indentifying relationships between data with a view to producing a detailed data model of the database. 
+Database design is the process of organizing, classifying and identifying relationships between data with a view to producing a detailed data model of the database. 
 
 ✔️ Determine the purpose of your Database.
 
-      This is how you intend to use the database. You could elicit requirement to determine its use
-      case. Example use case: A Customer database that keeps a list of customer related information.
+      This is how you intend to use the database. You could elicit requirement to determine its use case. 
+      Example use case: A Customer database that keeps a list of customer related information.
 
 ✔️ Gather and organize all forms of information required
 
-      After you have determined the purpose of your database, you need to gather all data needed to be
-      stored on the database. Consider your reporting requirements, all user requirements and any other
-      related data needs
+      After you have determined the purpose of your database, you need to gather all data needed to be stored on the database. Consider your reporting requirements, all user requirements and any other related data needs
 
 ✔️ Divide information into tables
 
@@ -146,16 +141,15 @@ Database design is the process of organizing, classifying and indentifying relat
 ✔️ Normalisation - Apply normalisation rules
 
    Normalisation is a process of efficiently organising data in a database to eliminate redundancy and inconsistent dependencies. 
-   This includes creating Tables and establishing relationmships between these tables.
+   This includes creating Tables and establishing relationships between these tables.
    
    The rules for database Normalisations are called 'Normal Forms'. 
    
-   If a database conforms to the first normal form, then the database is said to be in the first normal form
-   If it adheres to the first three normal forms, the database is considered to be in the third normal form.
+   If a database conforms to the first normal form, then the database is said to be in the first normal form. If it adheres to the first three normal forms, the database is considered to be in the third normal form.
    
-   There are about 5 Normal forms, but only the first three are goiing to be described here. 
+   There are about 5 Normal forms, but only the first three are going to be described here. 
    
-  1.  First normal form (1NF)
+   1.  First normal form (1NF)
          - Each cell should contain a single value. 
                We need to eliminate repeating groups of columns in a cell (e.g. item1, item2, ..)
          - Creation of separate tables for related data
@@ -184,13 +178,13 @@ Database design is the process of organizing, classifying and indentifying relat
   
 ##  ACID properties and RDBMS
 
-Four cruial properties define relational database transations: atomicity, consisteny, isolation and durability - Typially called ACID
+Four crucial properties define relational database transactions: atomicity, consistency, isolation and durability - Typically called ACID
 
  ✔️ Atomicity - Defines all the elements that make up a complete database transaction.
  
  ✔️ Consistency - Defines the rules for maintaining data points in a correct state after a transaction.
  
- ✔️ Isolation - Keeps the effct of a transaction invisible to pothers until it is committed to avoid confusion.
+ ✔️ Isolation - Keeps the effect of a transaction invisible to pothers until it is committed to avoid confusion.
  
  ✔️ Durability - Ensures the data changes becomes permanent once the transaction is committed.
 
@@ -217,7 +211,7 @@ Traditional RDBMS uses SQL syntax to store and retrieve data for further insight
     - Never provide tables with flat fixed-column records
     - Work with self-contained aggregates or BLOBs
     - Doesn’t require object-relational mapping and data normalization
-    - No complex features like query languages, query planners,referential integrity joins, ACID
+    - No complex features like query languages, query planners, referential integrity joins, ACID
 
 
 2. Schema-free
@@ -249,10 +243,10 @@ Traditional RDBMS uses SQL syntax to store and retrieve data for further insight
 
 <img width="521" alt="sqlvsnosql" src="https://user-images.githubusercontent.com/114578618/198925782-1c7bc13c-9078-44e2-8586-25eee312f550.png">
 
-✔️Architecturtal differences:
+✔️Architectural differences:
 
-RDBMS scales up, also known as vertical scalling in order to increase capacity. This will typically involve adding expensive hardware, faster CPUs, more Ram, etc..
-NoSQL in contrast scales out, also known as horizontal scalling. As NoSQL databases are designed for low latency and high resilience, built to run across clusters of distributed nodes. Scaling out will simply involve adding more nodes
+RDBMS scales up, also known as vertical scaling in order to increase capacity. This will typically involve adding expensive hardware, faster CPUs, more Ram, etc..
+NoSQL in contrast scales out, also known as horizontal scaling. As NoSQL databases are designed for low latency and high resilience, built to run across clusters of distributed nodes. Scaling out will simply involve adding more nodes
 
 
 ✔️Replication: 
@@ -277,39 +271,38 @@ Every category has its unique attributes and limitations. None of the above-spec
   
 <img width="264" alt="image" src="https://user-images.githubusercontent.com/114578618/198932170-9507c28d-4413-4fd2-9849-8fb1d31e80de.png">
 
-1. Key Value Pair Based
+1. Key Value Pair Based:<br/>
   Data is stored in key/value pairs. It is designed in such a way to handle lots of data and heavy load.
   Key-value pair storage databases store data as a hash table where each key is unique, and the value can be a JSON, BLOB(Binary Large Objects), string,     etc. This kind of NoSQL database is used as a collection, dictionaries, associative arrays, etc. 
-  Uses: shopping cart content, 
+  Uses: shopping cart content.
   Example databases are Redis, Dynamo, Riak
 
 
-2.  Column-based
-    Column-oriented databases work on columns. Every column is treated separately. Values of single column databases are stored contiguously.
-    column oriented databases deliver high performance on aggregation queries like SUM, COUNT, AVG, MIN etc, as the data is readily available in a column.
-    Uses: Datawarehouses
+2.  Column-based:<br/>
+    Column-oriented databases work on columns. Every column is treated separately. Values of single column databases are stored contiguously. Column oriented databases deliver high performance on aggregation queries like SUM, COUNT, AVG, MIN etc, as the data is readily available in a column.
+    Uses: Datawarehouses.
     Example: HBase, Cassandra, Amazon Redshift
 
 
-3.  Document-Oriented
+3.  Document-Oriented:<br/>
     Document-Oriented NoSQL DB stores data as JSON or XML formats. So in the document data model, each document has a key-value pair 
-    Uses: Catalogs, content management
+    Uses: Catalogs, content management.
     Example: Amazon DocumentDB, MongoDB
   
 
-4.  Graph-Based
+4.  Graph-Based:<br/>
     A graph type database stores entities as well the relations amongst those entities. The entity is stored as a node with the relationship as edges. An     edge gives a relationship between nodes. Every node and edge has a unique identifier. Compared to a relational database where tables are loosely           connected, a Graph database is a multi-relational in nature. Traversing relationship is fast as they are already captured into the DB, and there is no     need to calculate them.
     Uses: mostly used for social networks, logistics, spatial data.
     Examples: Neo4J, Infinite Graph, OrientDB.
     
 ## Query Mechanism tools for NoSQL
 
-The most common data retrieval mechanism is the REST-based retrieval of a value based on its key/ID with GET resource
-Document store Database offers more difficult queries as they understand the value in a key-value pair. For example, CouchDB allows defining views with MapReduce
+The most common data retrieval mechanism is the REST-based retrieval of a value based on its key/ID with GET resource.
+Document store Database offers more difficult queries as they understand the value in a key-value pair. For example, CouchDB allows defining views with MapReduce.
 
 ## What is the CAP Theorem?
 
-CAP theorem is also called brewer’s theorem. It states that is impossible for a distributed data store to offer more than two out of three guarantees
+CAP theorem is also called brewer’s theorem. It states that it is impossible for a distributed data store to offer more than two out of three following guarantees:
 
 1.	Consistency
 2.	Availability
@@ -335,9 +328,9 @@ Data replication may not be instantaneous as some copies will be updated immedia
 
 ## BASE: Basically Available, Soft state, Eventual consistency
 
-- 	Basically, available means DB is available all the time as per CAP theorem
+- 	Basically available means the DataBase is available all the time as per the CAP theorem
 
-- 	Soft state means even without an input; the system state may change
+- 	Soft state means even without an input the system state may change
 
 -  	Eventual consistency means that the system will become consistent over time
 
@@ -354,8 +347,6 @@ Data replication may not be instantaneous as some copies will be updated immedia
 
   -	Easy Replication
 
-  -	No Need for Separate Caching Layer
-
   -	It provides fast performance and horizontal scalability.
 
   -	Can handle structured, semi-structured, and unstructured data with equal effect
@@ -366,7 +357,7 @@ Data replication may not be instantaneous as some copies will be updated immedia
 
   -	Support Key Developer Languages and Platforms
 
-  -	Simple to implement than using RDBMS
+  -	Simpler to implement than using RDBMS
 
   -	It can serve as the primary data source for online applications.
 
@@ -402,9 +393,9 @@ Data replication may not be instantaneous as some copies will be updated immedia
 
   -	The concept of NoSQL databases became popular with Internet giants like Google, Facebook, Amazon, etc. who deal with huge volumes of data
 
-  -	In the year 1998- Carlo Strozzi use the term NoSQL for his lightweight, open-source relational database
+  -	In the year 1998- Carlo Strozzi used the term NoSQL for his lightweight, open-source relational database
 
-  -	NoSQL databases never follow the relational model it is either schema-free or has relaxed schemas
+  -	NoSQL databases never follow the relational model. It is either schema-free or has relaxed schemas
 
   -	Four types of NoSQL Database are 1). Key-value Pair Based 2). Column-oriented Graph 3). Graphs based 4). Document-oriented
 
