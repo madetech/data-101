@@ -328,7 +328,7 @@ Data replication may not be instantaneous as some copies will be updated immedia
 
 ## BASE: Basically Available, Soft state, Eventual consistency
 
-- 	Basically available means the DataBase is available all the time as per the CAP theorem
+- 	Basically Available means the database is available all the time as per the CAP theorem
 
 - 	Soft state means even without an input the system state may change
 
@@ -395,7 +395,7 @@ Data replication may not be instantaneous as some copies will be updated immedia
 
   -	In the year 1998- Carlo Strozzi used the term NoSQL for his lightweight, open-source relational database
 
-  -	NoSQL databases never follow the relational model. It is either schema-free or has relaxed schemas
+  -	NoSQL databases never follow the relational model. They are either schema-free or have relaxed schemas
 
   -	Four types of NoSQL Database are 1). Key-value Pair Based 2). Column-oriented Graph 3). Graphs based 4). Document-oriented
 
