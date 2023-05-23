@@ -72,7 +72,7 @@ If you enjoyed using these learning paths or have feedback, please use this [fee
 
 ## Lead Data Engineer Exams
 
-Please refer to [Senior Data Engineer document](Senior_Data_Engineer.md) for additional supplementary certifications
+Please refer to [data 102](data_102.md) for additional supplementary certifications
 
 [Azure AI Engineer](https://docs.microsoft.com/en-us/certifications/azure-ai-engineer/)
 
