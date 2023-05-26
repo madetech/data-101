@@ -45,6 +45,8 @@ To expand upon the core learning modules please check out the learning objective
 
 # Guides
  - :robot: [Machine Learning Workflow: A guide for DMs](guides/machine_learning_workflow.md)
+ - :book: [Juypter Notebook Setup](guides/jupyter_setup.md)
+
 
 
 ## Contributing to data-101
