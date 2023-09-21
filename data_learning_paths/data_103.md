@@ -64,6 +64,8 @@ If you enjoyed using these learning paths or have feedback, please use this [fee
 
 [Machine Learning Design Patterns: Solutions to Common Challenges in Data Preparation, Model Building, and MLOps - Valliappa Lakshmanan (book)](https://www.amazon.co.uk/Machine-Learning-Design-Patterns-Preparation/dp/1098115783)
 
+[Feature Stores](https://docs.featurestore.org/)
+
 ## Compares and evaluates data management solutions, including the required tooling, to ensure proposed solutions are matched to client needs
 
 [Pitching to stakeholders (article)](https://medium.com/@krysburnette/pitching-creative-ideas-to-stakeholders-6abef83be15b)
