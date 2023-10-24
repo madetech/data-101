@@ -1,8 +1,8 @@
-## Tooling 
+# Tooling 
 
 Below is a list of tooling that the engineers have noted or used on their projects, that might prove useful in other projects or want to be reviewed.
 
-# Linters & Formatters 
+## Linters & Formatters 
 
 [ruff](https://github.com/astral-sh/ruff): linter for Python 
 Reviews: 
@@ -12,7 +12,7 @@ Reviews:
 Reviews: 
 "Used for a number of years and seems to capture most formatting issues" - Tom F
 
-# Data validation 
+## Data validation 
 
 [Pydantic](https://docs.pydantic.dev/latest/): data validation library for Python.
 Reviews: 
@@ -20,7 +20,7 @@ Reviews:
 [Pandera](https://pandera.readthedocs.io/en/stable/): Data validation library for dataframes (Pydantic intergration available)
 Reviews:
 
-# Data pipelines 
+## Data pipelines 
 
 [Prefect](https://www.prefect.io): Data workflow tool 
 Reviews:
@@ -28,7 +28,7 @@ Reviews:
 [Great Expectations](https://greatexpectations.io/): Data quality tool for pipelines
 Reviews:
 
-# IAC 
+## IAC 
 
 [checkov](https://www.checkov.io/): Scans cloud infrastructure for misconfigurations
 Reviews:
@@ -36,7 +36,7 @@ Reviews:
 [OpenTofu](https://opentofu.org/): Open source alternative to Terraform 
 Reviews:
 
-# Goverance 
+## Goverance 
 
 [Overwatch](https://databrickslabs.github.io/overwatch/): Log tracking in Databricks 
 Reviews:
@@ -47,7 +47,7 @@ Reviews:
 [Obsidian](https://obsidian.md/): writing app useful for note taking and documentation 
 Reviews: 
 
-# Data Visualization 
+## Data Visualization 
 
 [Json Crack](https://github.com/AykutSarac/jsoncrack.com): open-source data visualization app capable of visualizing data formats such as JSON, YAML, XML, CSV and more,
 Reviews: 
@@ -62,7 +62,7 @@ Reviews:
 Reviews:
 
 
-# Developer Productivity 
+## Developer Productivity 
 
 [Quin](https://obsidian.md/): PySpark methods
 Reviews: 
@@ -74,7 +74,7 @@ Reviews:
 Reviews: 
 
 
-# Security 
+## Security 
 
 [Automated-Security-Helper](https://github.com/aws-samples/automated-security-helper): Security helper tool to analyse code
 Reviews: 
@@ -84,7 +84,7 @@ Reviews:
 Reviews:
 "Quick and easy to use and identified vunerable packages" - Tom F
 
-# Package management & virtual environments
+## Package management & virtual environments
 
 [Nixos](https://nixos.org/): A package manager & system configuration 
 Reviews:
@@ -93,7 +93,7 @@ Reviews:
 Reviews: 
 "A good virtual environment manager and easy to export" - Tom F
 
-# MlOps tooling 
+## MlOps tooling 
 
 [MlOps tooling](https://mymlops.com/tools): List of MlOps tooling
 
