@@ -127,7 +127,7 @@ Which you can then use:
 `rst2myst convert docs/**/*.rst`
 
 ## Referencing an existing root README file
-Do you have a directory structure a bit like this, and want to reference README?
+Do you have a directory structure a bit like this, and want to reference an existing README?
 |- src/
 |- docs/
 |-- build/
@@ -142,3 +142,16 @@ With this, we can use the {include} directive and then just use the README that 
 ```
 
 Adding this block to your index.md file you should render your existing README.md now in your new space.
+
+## Powering up your basic sphinx setup
+By this point you now have a basic working Sphinx configuration with Markdown support. But we can take Sphinx further than this, and we will explore some more powerful functionality in this section.
+
+### Setting up an autobuilder
+This is quite a simple but powerful step especially for locally testing changes to documentation. What this step will do is allow you instead of running `sphinx-build` to instead run a new command, `sphinx-autobuild`, with the same options passed in as before. The difference is that now when you make a change to a markdown file and save it, **it will update in real time**
+
+To set this up, you will need another dependency to install in the usual ways and then via pip:
+`pip install sphinx-autobuild`
+And that's it. Now you can run `sphinx-autobuild docs/source/ docs/build/` and spin up a local server as before, but that will rebuild whenever you make changes to a Markdown file and save it. There are some caveats to this which we will encounter later.
+
+### Setting a theme
+The basic template of Sphinx is a bit lame, and you can find some other templates (TODO) 
