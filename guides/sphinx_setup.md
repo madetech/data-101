@@ -1,5 +1,5 @@
 # Setting up Sphinx in a client environment
-This guide has come from the work done with the Skills For Care workstream, and is tailored to assume you are trying to get a working and powerful sphinx configuration within an already existing space. If you are looking to start a project from the beginning, or want to just have a good tutorial for setting up from their documentation, then [check out this link instead](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+This guide has come from the work done with the Skills For Care workstream, and is tailored to assume you are trying to get a working and powerful sphinx configuration within an already existing python space. If you are looking to start a project from the beginning, or want to just have a good tutorial for setting up from their documentation, then [check out this link instead](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
 
 ## Guide outcomes
 - Launch a local Sphinx documentation server that dynamically updates in real time
@@ -60,6 +60,10 @@ Now you can build it:
 `sphinx-build -M html docs/source/ docs/build/`
 In the console output, you should see a link generated that you can paste into your browser.
 This should open up the index page. 
+
+The first thing you might notice is that after this basic setup there is a lot of noise in version control. Let us deal with that first:
+### Cleaning up version control
+
 
 But ReStructuredText is not how a lot of projects store content like READMEs. They normally use markdown, and exist outside of this new space that we have created.
 
@@ -146,12 +150,25 @@ Adding this block to your index.md file you should render your existing README.m
 ## Powering up your basic sphinx setup
 By this point you now have a basic working Sphinx configuration with Markdown support. But we can take Sphinx further than this, and we will explore some more powerful functionality in this section.
 
-### Setting up an autobuilder
-This is quite a simple but powerful step especially for locally testing changes to documentation. What this step will do is allow you instead of running `sphinx-build` to instead run a new command, `sphinx-autobuild`, with the same options passed in as before. The difference is that now when you make a change to a markdown file and save it, **it will update in real time**
+| Setting up an autobuilder |
+| ------------------------- |
+| This is quite a simple but powerful step especially for locally testing changes to documentation. What this step will do is allow you instead of running `sphinx-build` to instead run a new command, `sphinx-autobuild`, with the same options passed in as before. The difference is that now when you make a change to a markdown file and save it, **it will update in real time** |
+| To set this up, you will need another dependency to install in the usual ways and then via pip: <br><br> `pip install sphinx-autobuild` <br><br> And that's it. Now you can run `sphinx-autobuild docs/source/ docs/build/` and spin up a local server as before, but that will rebuild whenever you make changes to a Markdown file and save it. There are some caveats to this which we will encounter later.|
 
-To set this up, you will need another dependency to install in the usual ways and then via pip:
-`pip install sphinx-autobuild`
-And that's it. Now you can run `sphinx-autobuild docs/source/ docs/build/` and spin up a local server as before, but that will rebuild whenever you make changes to a Markdown file and save it. There are some caveats to this which we will encounter later.
+| Setting a theme |
+| --------------- |
+| The basic template of Sphinx, Alabaster, is a bit lame, and you can find some other templates in the [sphinx theme gallery](https://sphinx-themes.org/). <br> Here I'm going to very quickly run through how to make this better with an example. Simply, you need to change the theme in the `conf.py` configuration and install the python package (and if you have something like a pipfile don't forget to update that too):  <br> `html_theme = "furo"`<br><br>`pip install furo`<br>  <br>The theme is more modern than the default, and looks way better. It also allows for dark/light screen switching for one thing, and you can find more of it's features on the [furo github page](https://github.com/pradyunsg/furo "https://github.com/pradyunsg/furo").<br><br>More themes in their [Themes Gallery](https://sphinx-themes.org/ "https://sphinx-themes.org/") |
 
-### Setting a theme
-The basic template of Sphinx is a bit lame, and you can find some other templates (TODO) 
+| Sphinx duration |
+| --------------- |
+| This extension shows how long it takes to render the pages you build in your documentation. This time appears in the console whenever you make a change and it re-builds the page, and could be useful for page debugging or spotting larger build times, but is otherwise fairly niche. <br> For this you will need to add: <br>`"sphinx.ext.duration"`  <br> to your extensions |
+
+| Allow links to subheadings |
+| -------------------------- |
+| You need another internal extension, `"sphinx.ext.autosectionlabel"`<br><br>This allows you to reference a subheading by doing something like the following:<br><br>`` {ref}`Allow links to subheadings` `` |
+
+| Google Docstring support |
+| ------------------------ |
+| For this we need to add the built in extension to the `conf.py` file as so: <br><br>`"sphinx.ext.napoleon",`<br><br>This adds support for reading google docstrings of the format as described below, and found on this [link](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#google-vs-numpy "https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#google-vs-numpy") |
+
+By this point, and building the project a couple of times, you might have quickly noticed a lot of noise in version control. This comes from all of the files that get built when running the `sphinx-build` commands.
