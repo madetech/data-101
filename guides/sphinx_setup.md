@@ -2,18 +2,70 @@
 This guide has come from the work done with the Skills For Care workstream, and is tailored to assume you are trying to get a working and powerful sphinx configuration within an already existing python space. If you are looking to start a project from the beginning, or want to just have a good tutorial for setting up from their documentation, then [check out this link instead](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
 
 ## Guide outcomes
+- What Sphinx even is
 - Launch a local Sphinx documentation server that dynamically updates in real time
 - Sphinx configuration understands markdown, and all documentation files exist as markdown and not ReStructuredText.
 - Sphinx configuration allows dynamic reading of Docstrings, of Google or Numpy standard format.
 - How to handle Sphinx within version control.
 - Local configuration is ready for potential deployment into CI/CD pipelines with proper routing.
 - Demonstrate how to interact with the configuration to change the theme, and use extensions.
+- To understand potential use cases of this setup, as docstrings aren't for everyone!
 
-# Step-by-step instructions
+# Introduction - What is Sphinx?
+
+At it's core [Sphinx](https://www.sphinx-doc.org/en/master/index.html) is a documentation generator that uses reStructuredText or Markdown to create static documentation websites. It makes it easy to create intelligent and beautiful documentation for not just python projects, and can be embedded in many existing project setups.
+[Sphinx](https://www.sphinx-doc.org/en/master/index.html) can look quite intimidating to a first-time user - it is packed full of features and has a large community base with plugins and themes galore
+
+I hosted a Data CoP that talked about `Sphinx`, and gave some examples of potential alternatives and competitors. If you want to see this CoP you can find the recording information in our [Facilitators sheet](https://docs.google.com/spreadsheets/d/1C4n1miK6Xaa5CHkZmjSQyBRtSm15PyyUpoCk_SzM0NE/edit?usp=sharing).
+
+## When might you want to use Sphinx?
+This section will give an insight into when it might be used, and also what other tools exist in this realm.
+
+### Examples of potential use cases
+Docstrings are not everyone's cup of tea. **But you also don't need Docstrings to use Sphinx**. Sphinx has some dynamic powers to reduce the amount of time you spend writing documentation that surrounds docstrings, sure, but since it is built off of Markdown in a `docs` directory, it can also set the stage for holding documentation in READMEs close to your code and thus within the same version control when you come to making PRs for code changes.
+
+Here are some potential project scenarios where Sphinx might be a good idea:
+- The [Skills for Care workstream](https://github.com/NMDSdevopsServiceAdm/DataEngineering/)
+- When there is a project whose non technical stakeholders want better visibility of what the code is doing.
+- There is a need for documentation to see which code is responsible for specific parts of the pipeline, and this is particularly relevant if there are ML components to the pipeline stored in the same part of the code base.
+- You have multiple components to your project, such as an API front end as well as a webscreen that you want to signpost people toward when they visit your repo.
+- You don't have a front end development team and want easy rendering of static web-page documentation for any aspect of your project.
+- You have graphics or visuals like C4 diagrams close to your code you want to showcase somewhere.
+- You are on a workstream where there is some to no documentation, and you want to incentivise better documentation practises. You can use Sphinx to encourage docstring usage or even better functional practises if there is documentation that can build from it - i.e. do not repeat yourself practises translating across into docs.
+
+### Main counter examples
+You might not need to use Sphinx specifically if any of the following apply:
+- You are building an API, `Swagger` might be a better use case for this
+- The team you are in has good functionally descriptive functions that are self explanatory without docstrings
+- There is no need for code level documentation
+- You have an already established documentation server like Confluence that is well established for updating during PRs.
+
+### Other Competitors
+
+#### Similar - Swagger
+
+The most significant difference is that Swagger UI is not general enough, it is primarily focused on documenting RESTful APIs. While it can be used with projects in different programming languages, it is specifically designed for documenting the API endpoints and their associated operations. Sphinx is a tool that can be used to document projects in various programming languages, including Python, JavaScript, C++, and more. It has built-in support for documenting different types of projects, including APIs, libraries, and command-line tools.
+Where it lacks in interactivity that swagger might have, it makes up for in flexibility and design of content, without having to have a front-end development team, and if there is time and interest at the end we can go through more differences between them, but this is enough of a difference for now.
+
+Swagger versus Sphinx: https://stackshare.io/stackups/sphinx-vs-swagger-ui - more breakdowns
+
+#### Other documentation generators
+All of the tools in this section are other alternatives to Sphinx, with specific pros and cons.
+
+**pdoc** - Its code is a fraction of Sphinx’s complexity and the output is not quite as polished, but it works with zero configuration in a single step. It also supports docstrings for variables through source code parsing. Otherwise it uses introspection (same as Sphinx). Worth checking out if Sphinx is too complicated for your use case and you only have python code, as currently the only way to have this include markdown is by using reStructuredText's `.. include::` Directive, defeating the point of only using markdown in a project.
+
+**pydoctor** - A successor to the popular epydoc, it works only for Python 2. Main benefit is that it traces inheritances particularly well, even for multiple interfaces. Works on static source and can pass resulting object model to Sphinx if you prefer its output style. Pydoctor has a clean look to it, but lacks themes like Sphinx has, more on this later.
+
+**doxygen** - Not Python-exclusive and its interface can be a bit crowded and ugly. It claims to be able to generate some documentation (mostly inheritances and dependencies) from undocumented source code, perhaps giving it use in really large established projects without documentation. It does appear to have dynamic diagram support of class hierarchies, so perhaps a better consideration for dev heavy projects, and teams familiar with old school C++ might already know this tool from its wide use in multiple languages - however Sphinx also has an extension to enabled Graphviz diagrams straight from source from what I've seen which possibly offsets this advantage some what... again that increased flexibility in design.
+
+Honourable mention:
+You might also have heard about [readthedocs](https://about.readthedocs.com/?ref=readthedocs.com) but this is not free and open source, but can be used to host Sphinx enabled projects, and even has it's own Readthedocs theme within Sphinx. However Sphinx can be deployed in github pages, and there is instructions for this on our Data-101 page guide for Sphinx
+
+# Step-by-step instructions for setting up a Powerful Sphinx configuration
 ## Setting up
 
 Source of instructions for this step: https://www.sphinx-doc.org/en/master/usage/installation.html
-You can install sphinx via brew, but there are other windows instructions too if you aren't operating on MAC or linux. Note also that I am assuming you do not have an existing folder called "docs" when you run this section.
+You can install Sphinx via brew, but there are other windows instructions too if you aren't operating on MAC or linux. Note also that I am assuming you do not have an existing folder called "docs" when you run this section.
 
 The guide in the link above instructs to use pip to install sphinx-doc, but sphinx-doc isn't quite right. Also ensure that if you have an environment such as poetry, conda, pipenv, or virtualenv, to make sure you update however you inject depencies into your environment. But here is the pip install command you actually need, which you can translate to your environment.
 ```bash
@@ -61,22 +113,27 @@ Now you can build it:
 In the console output, you should see a link generated that you can paste into your browser.
 This should open up the index page. 
 
-The first thing you might notice is that after this basic setup there is a lot of noise in version control. Let us deal with that first:
-### Cleaning up version control
+Congrats - you've completed the basic tutorial sphinx provides at this point. 
 
+The first thing you might notice though is that after this basic setup there is a *lot of noise in version control*. So in the next section let us level up our deployment, and firstly deal with that:
+
+## Cleaning up version control
+
+Simply add `docs/build` somewhere in your `.gitignore`. 
+What you are doing here is telling git to ignore all of the HTML, CSS and those sort of rendered files that are created whenever you run `sphinx-build` or an equivalent. These will regenerate whenever you make changes, and you COULD commit them to version control if you want to, but you don't NEED to. What controls these files is your configuration and files within `docs/source`, and that is more valuable.
+
+## Adding Markdown support to your Sphinx Configuration
 
 But ReStructuredText is not how a lot of projects store content like READMEs. They normally use markdown, and exist outside of this new space that we have created.
 
 In the section we will look to address both of these issues.
-
-## Adding Markdown support to your Sphinx Configuration
 
 Sources for this section: 
 - https://www.sphinx-doc.org/en/master/usage/markdown.html#configuration
 - https://www.sphinx-doc.org/en/master/tutorial/first-steps.html
 - https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
 
-The first thing you will need to do is configure Sphinx to understand Markdown. This will involve another dependency and a change to the conf.py file we generated earlier.
+The next thing you will need to do is configure Sphinx to understand Markdown. This will involve another dependency and a change to the conf.py file we generated earlier.
 Run this command (and update any environment dependencies you might have)
 `pip install --upgrade myst-parser`
 
@@ -136,6 +193,7 @@ Do you have a directory structure a bit like this, and want to reference an exis
 |- docs/
 |-- build/
 |-- source/
+|--- index.md
 |- README.md
 
 Fortunately the [video](https://www.youtube.com/watch?v=qRSb299awB0) showed how to do this too. It makes use of **directives**, which I think is the name given to these triple backtick blocks
@@ -147,8 +205,44 @@ With this, we can use the {include} directive and then just use the README that 
 
 Adding this block to your index.md file you should render your existing README.md now in your new space.
 
-## Powering up your basic sphinx setup
+# Powering up your basic sphinx setup
 By this point you now have a basic working Sphinx configuration with Markdown support. But we can take Sphinx further than this, and we will explore some more powerful functionality in this section.
+
+## Configuring autofunctions and automodules
+One of the core foci of the Data CoP talk was the idea that Sphinx can dynamically read function docstrings from your code repository and thus offer a way of expanding the documentation around the code, whilst only making changes in the code. Setup for this isn't obvious following the tutorials, so here I will describe how to get this working with code not just in the new docs directory, but also existing code that exists elsewhere.
+
+### Steps to automatic docs
+1. Enable the `"sphinx.ext.autodoc"` extension in `conf.py`
+2. Extend the path in the conf.py. This step is important and was the primary cause of problems in this realm when referencing code external to the `docs` directory. See more below
+3. Simply reference the code function you want to document, see below for instructions
+
+| Extending the path |
+| ----------------- |
+| At it's heart, `conf.py` is a python file, and so you can import base packages and this is understood by Sphinx. <br>We can leverage this to extend the path and thus allow sphinx to find code elsewhere in the project:
+```
+import sys, os
+
+sys.path.insert(0, os.path.abspath("../.."))
+``` 
+Put this anywhere in the `conf.py` file and you will find that imports should work across the project|
+
+| Syntax for autofunctions and automodules |
+| ---------------------------------------- |
+| Remember that you need `{eval-rst}` after the first triple backtick in each case, I just can't do this in Markdown in a tutorial about it because it's a magic function. |
+|<br>
+```
+.. autofunction:: utils.utils.remove_already_cleaned_data
+
+.. automodule:: jobs.clean_ascwds_workplace_data
+   :members:
+```
+<br>
+
+| Correcting a Docstring and re-rendering it |
+| ------------------------------------------ |
+| I noticed that making a change to a docstring didn't automatically update it in any auto-doc reference. Take the following example, imagine being contained within an eval-rst colon fence:<br><br>`autofunction:: utils.utils.latest_datefield_for_grouping`<br><br>The main steps I tried that seemed to work, revolved around the followingg steps:<br><br>1. Closing the autobuild server down<br>    <br>2. Deleting that autofunction entirely, saving the docs<br>    <br>3. Re-running autobuild<br>    <br>4. THEN put the autofunction back in re-save.<br>    <br>5. This seemed to eliminate the cache of the old variant and load the new one, and if not, try closing the browser too and repeating the steps above, then to re-open the browser.<br>    <br><br>It is a little fiddly with the autodocs! |
+
+## Some other level up options
 
 | Setting up an autobuilder |
 | ------------------------- |
@@ -172,3 +266,5 @@ By this point you now have a basic working Sphinx configuration with Markdown su
 | For this we need to add the built in extension to the `conf.py` file as so: <br><br>`"sphinx.ext.napoleon",`<br><br>This adds support for reading google docstrings of the format as described below, and found on this [link](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#google-vs-numpy "https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#google-vs-numpy") |
 
 By this point, and building the project a couple of times, you might have quickly noticed a lot of noise in version control. This comes from all of the files that get built when running the `sphinx-build` commands.
+
+
