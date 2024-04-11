@@ -77,7 +77,7 @@ Next you can follow the steps here: https://www.sphinx-doc.org/en/master/tutoria
 
 ```bash
 sphinx-quickstart docs
-```
+
 
 You have two options for placing the build directory for Sphinx output.
 Either, you use a directory "_build" within the root path, or you separate
