@@ -13,10 +13,10 @@ This guide has come from the work done with the Skills For Care workstream, and 
 
 # Introduction - What is Sphinx?
 
-At it's core [Sphinx](https://www.sphinx-doc.org/en/master/index.html) is a documentation generator that uses reStructuredText or Markdown to create static documentation websites. It makes it easy to create intelligent and beautiful documentation for not just python projects, and can be embedded in many existing project setups.
+At it's core [Sphinx](https://www.sphinx-doc.org/en/master/index.html) is a documentation generator that uses reStructuredText or Markdown to create static documentation websites. It makes it easy to create intelligent and beautiful documentation for not just python projects, and can be embedded in many existing project setups (see Examples of potential use cases below).
 [Sphinx](https://www.sphinx-doc.org/en/master/index.html) can look quite intimidating to a first-time user - it is packed full of features and has a large community base with plugins and themes galore
 
-I hosted a Data CoP that talked about `Sphinx`, and gave some examples of potential alternatives and competitors. If you want to see this CoP you can find the recording information in our [Facilitators sheet](https://docs.google.com/spreadsheets/d/1C4n1miK6Xaa5CHkZmjSQyBRtSm15PyyUpoCk_SzM0NE/edit?usp=sharing).
+I hosted a Data CoP that talked about `Sphinx`, and gave some examples of potential alternatives and competitors. If you want to see this CoP please reach out to the data team (internal use only).
 
 ## When might you want to use Sphinx?
 This section will give an insight into when it might be used, and also what other tools exist in this realm.
@@ -25,13 +25,12 @@ This section will give an insight into when it might be used, and also what othe
 Docstrings are not everyone's cup of tea. **But you also don't need Docstrings to use Sphinx**. Sphinx has some dynamic powers to reduce the amount of time you spend writing documentation that surrounds docstrings, sure, but since it is built off of Markdown in a `docs` directory, it can also set the stage for holding documentation in READMEs close to your code and thus within the same version control when you come to making PRs for code changes.
 
 Here are some potential project scenarios where Sphinx might be a good idea:
-- The [Skills for Care workstream](https://github.com/NMDSdevopsServiceAdm/DataEngineering/)
 - When there is a project whose non technical stakeholders want better visibility of what the code is doing.
 - There is a need for documentation to see which code is responsible for specific parts of the pipeline, and this is particularly relevant if there are ML components to the pipeline stored in the same part of the code base.
 - You have multiple components to your project, such as an API front end as well as a webscreen that you want to signpost people toward when they visit your repo.
 - You don't have a front end development team and want easy rendering of static web-page documentation for any aspect of your project.
 - You have graphics or visuals like C4 diagrams close to your code you want to showcase somewhere.
-- You are on a workstream where there is some to no documentation, and you want to incentivise better documentation practises. You can use Sphinx to encourage docstring usage or even better functional practises if there is documentation that can build from it - i.e. do not repeat yourself practises translating across into docs.
+- You are on a workstream where there is some to no documentation, and you want to incentivise better documentation practises. You can use Sphinx to encourage docstring usage or even better functional practises if there is documentation that can build from it - i.e. DRY practises translating across into docs.
 
 ### Main counter examples
 You might not need to use Sphinx specifically if any of the following apply:

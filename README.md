@@ -47,6 +47,7 @@ To expand upon the core learning modules please check out the learning objective
  - :robot: [Machine Learning Workflow: A guide for DMs](guides/machine_learning_workflow.md)
  - :book: [Juypter Notebook Setup](guides/jupyter_setup.md)
 -  :pencil: [List of tooling](guides/tooling.md)
+-  :cat2: [Sphinx setup instructions](guides/sphinx_setup.md)
 
 
 ## Contributing to data-101
