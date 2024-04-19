@@ -48,6 +48,7 @@ To expand upon the core learning modules please check out the learning objective
  - :book: [Juypter Notebook Setup](guides/jupyter_setup.md)
 -  :pencil: [List of tooling](guides/tooling.md)
 -  :cat2: [Sphinx setup instructions](guides/sphinx_setup.md)
+-  :memo: [AWS Glue features](guides/AWS_Glue_Features.md)
 
 
 ## Contributing to data-101
