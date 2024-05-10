@@ -134,6 +134,81 @@ flightData2015\
   .show()
 ```
 
+## Common functions
+
+### select and selectExp
+
+**select** and **selectExpr** allow you to manipulate columns in your dataframe and are the equivalent of SQL queries on table data.  
+
+```sql
+SELECT * from myTable
+SELECT columnName from myTable
+SELECT columnName, someOtherCol as otherCol FROM myTable
+```
+The easiest way is to just pass column names as strings.
+
+```python
+df.select("someColumn").show(2)
+```
+
+You can also refer to collumns in a number of different ways
+
+```python
+from pyspark.sql.functions import expr, col, column
+df.select(
+    expr("someColumn"),
+    col("someColumn"),
+    column("someColumn"),
+    expr("someColumn as some_other_name")
+).show(2)
+```
+
+Shorthand version of **df.select(expr("columnName as some_other_name"))**
+
+```python
+df.selectExpr("some_column as some_other_name")
+```
+
+### lit
+
+Sometimes we need to pass explicit values into Spark that are just a value (rather then a new column). They could be constant value or something we need to compare to later on. To do this we use literals.
+
+```python
+from pyspark.sql.functions import lit
+df.select(expr("*"), lit(3.14).alias("Pi")).show(2)
+```
+
+In SQL -
+
+```SQL
+SELECT *, 3.14 as Pi FROM myTable LIMIT 2
+```
+
+### withColumn
+
+Used to add new columns to a DataFrame
+
+```python
+df.withColumn("numberOne", lit(1)).show(2)
+
+df.withColumn("withinCountry", expr("ORIGIN_COUNTRY_NAME" == "DEST_COUNTRY_NAME")).show(2)
+
+```
+
+In SQL -
+
+```sql
+SELECT *, 1 as numberOne from dfTable LIMIT 2
+```
+
+### withColumnRenamed
+
+Rename a column, the first string argument is the current name of the column, the second argument is the new name.
+
+```python
+df.withColumnRenamed("DEST_COUNTRY_NAME","dest")
+```
+
 ## References and Further Reading
 
 1. [Spark: The Definitive Guide Book](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/ "Spark: The Definitive Guide") by Bill Chambers and Matei Zaharia (Chapter 2)
