@@ -9,8 +9,6 @@ These are split to beginner -> advanced data concepts to aid in self development
 - :crystal_ball: [Data 103 Learning Objectives](data_learning_paths/data_103.md)
 - :floppy_disk: [Cert paths](data_learning_paths/certs.md)
 
-If you enjoyed using these learning paths or have feedback, please use this [feedback form](https://madetech.typeform.com/datalearning)
-
 If you are interested in learning about data science we have provided the following document containing useful topics and resources to get you started:
 
 # Data-101: An introduction to big data in Made Tech (basic tutorial)
