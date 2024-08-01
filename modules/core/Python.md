@@ -18,7 +18,7 @@ Both macOS and Linux ship with [Python](https://www.python.org) already installe
 
 
 ### Homebrew Python
-Hopefully you will already be familiar with Homebrew (see above) and already have this set up. When installing Python with homebrew Python 3 is the default version. If you have a specific requirement for a version of Python then you can also specify this, but there will be a better way of managing python versions in a later section. 
+Hopefully you will already be familiar with Homebrew (see above) and already have this set up. When installing Python with homebrew Python 3 is the default version. If you have a specific requirement for a version of Python then you can also specify this, but there will be alternative ways of managing python versions in a later section. 
 
 #### Installing Python 3
 ```
@@ -52,7 +52,7 @@ $ brew install pyenv
 $ brew install pyenv-virtualenv
 ```
 
-2. Next you need to follow the post-installation steps for pyenv and then for pyenv-virtualenv which should be output in the terminal, and can be found on their [github page#set-up-your-shell-environment-for-pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv). *You will likely be using a `bash_profile`* unless you've configured a `zsh` environment, so take a look at the relevant instructions. When combined they will look something like the example below:
+2. Next you need to follow the post-installation steps for pyenv and then for pyenv-virtualenv which should be output in the terminal, and can be found on their [github page#set-up-your-shell-environment-for-pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv). *You will likely be using `zsh` on a MacOS device* unless you've configured any other environment, so take a look at the relevant instructions. When combined they will look something like the example below:
 
 For Zsh:
 
