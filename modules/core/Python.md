@@ -18,7 +18,7 @@ Both macOS and Linux ship with [Python](https://www.python.org) already installe
 
 
 ### Homebrew Python
-Hopefully you will already be familiar with Homebrew (see above) and already have this set up. When installing Python with homebrew Python 3 is the default version. If you have a specific requirement for a version of Python then you can also specify this. 
+Hopefully you will already be familiar with Homebrew (see above) and already have this set up. When installing Python with homebrew Python 3 is the default version. If you have a specific requirement for a version of Python then you can also specify this, but there will be alternative ways of managing python versions in a later section. 
 
 #### Installing Python 3
 ```
@@ -38,18 +38,35 @@ $ pip install --upgrade setuptools
 ```
 *Note: If you are using Python 3 then then you will need to use `python3` and `pip3` by default. This can be changed by updating your `alias`. More information can be found [here](https://osxdaily.com/2022/02/15/make-python-3-default-macos/).*
 
-### Pyenv
-[Pyenv](https://github.com/pyenv/pyenv) is a Python version manager that allows you to install and manage different versions of Python. First we can install this using `brew`.
+### Pyenv and pyenv-virtualenv
+[Pyenv](https://github.com/pyenv/pyenv) is a Python version manager that allows you to install and manage different versions of Python.
+One of the powerful offerings of Pyenv for managing multiple local and quick setups is the ability to create different python environments for different python versions and easily activate them anywhere in your file system. This requires another brew dependency called [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+
+There are instructions for setting this up in the links above, but for simplicity we will combine the resources into the steps below.
+
+1. First we can install them both using `brew`.
 
 ```
+$ brew update
 $ brew install pyenv
-```
-In the future, you can upgrade using:
-```
-$ brew upgrade pyenv
+$ brew install pyenv-virtualenv
 ```
 
-Once installed, you can use `Pyenv` to install specific Python versions and set your global version. 
+2. Next you need to follow the post-installation steps for pyenv and then for pyenv-virtualenv which should be output in the terminal, and can be found on their [github page#set-up-your-shell-environment-for-pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv). *You will likely be using `zsh` on a MacOS device* unless you've configured any other environment, so take a look at the relevant instructions. When combined they will look something like the example below:
+
+For Zsh:
+
+```
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+
+source ~/.zshrc
+```
+
+Congratulations, you will now have pyenv successfully installed with its pyenv-virtualenv component!
+Now you can use `Pyenv` to install specific Python versions and set your global version, as well as build virtual environments on a specific python version. The former of which is explained below:
 
 #### List available Python versions
 ```
@@ -75,8 +92,34 @@ $ pyenv global <version_number>
 
 Virtual environments are an essential tool in development. They ensure that developers are all working from the same point and makes setting up projects far easier. Virtual environments are created on top of an existing Python installation, the “base” Python image, and may optionally be isolated from the packages in the base environment, so only those explicitly installed in the virtual environment are available. 
 
+## Using pyenv and virtual-env
+As explained in [using pyenv virtualenv with pyenv](https://github.com/pyenv/pyenv-virtualenv?tab=readme-ov-file#using-pyenv-virtualenv-with-pyenv), you can easily create a virtual environment for a specific python version using pyenv and virtualenv. As a simple example, provided you have followed the earlier setup steps, if you want a virtual environment called `my-virtual-env-2.7.10` on python `2.7.10`:
+
+```
+pyenv virtualenv 2.7.10 my-virtual-env-2.7.10
+```
+
+### Python version problems? How to test your installation!
+1. Check your python versions under pyenv with `pyenv versions`, 
+2. create a pyenv virtual environment with a different version of python to the pyenv version you are currently on, and try to switch to it.
+3. IF this continues to display the old python version you are on, then your `pyenv` isn't swapping your virtual environment as intended.
+These steps summarise the above:
+```
+pyenv install 3.11.9 (if you don't have it)
+pyenv virtualenv 3.11.9 test_environment
+pyenv activate test_environment
+which python
+```
+That last command should tell you that you are on python version `3.11.9`
+
+### Debugging pyenv environment problems
+If the above test failed, you may have outdated commands saved in your `zshrc` or `bash_profile`. They have updated their installation instructions [on their website](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv)
+
+*Check that your commands are the same as theirs!*
+
+
 ## Using venv
-Since the v3.3 release Python has a built in `venv` module [link](https://docs.python.org/3/library/venv.html). This is a lightweight virtual environment tool and is very simple to use. 
+Since the v3.3 release Python has a built in `venv` module [link](https://docs.python.org/3/library/venv.html). This is a lightweight virtual environment tool and is very simple to use for singular, one-off environments. 
 
 To set up a virtual environment first navigate to the root of your project. From here run:
 ```
@@ -100,7 +143,9 @@ $ deactivate
 ```
 
 ## Using Virtualenv
-The `virtualenv` library is a more feature rich version of the `venv` option discussed above. Among other benefits, it is faster and allows you to specify your base image of Python to be different from your global system version. For a full list of its benefits over `venv`, please read the documentation found [here](https://virtualenv.pypa.io/en/stable/index.html). 
+The `virtualenv` library is a more feature rich version of the `venv` option discussed above. Among other benefits, it is faster and allows you to specify your base image of Python to be different from your global system version. For a full list of its benefits over `venv`, please read the documentation found [here](https://virtualenv.pypa.io/en/stable/index.html).
+
+>Please note that there is a version of this module that interacts directly with `pyenv` for a full python version and environment management setup. You can find this in the earlier section, so only proceed if you intend to install Virtualenv as a standalone with a specific python version you want to control yourself.
 
 To use `virtualenv`, first install it to you base Python image:
 ```
