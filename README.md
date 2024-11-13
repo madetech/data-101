@@ -44,9 +44,10 @@ To expand upon the core learning modules please check out the learning objective
 # Guides
  - :robot: [Machine Learning Workflow: A guide for DMs](guides/machine_learning_workflow.md)
  - :book: [Juypter Notebook Setup](guides/jupyter_setup.md)
--  :pencil: [List of tooling](guides/tooling.md)
--  :cat2: [Sphinx setup instructions](guides/sphinx_setup.md)
--  :memo: [AWS Glue features](guides/AWS_Glue_Features.md)
+ - :pencil: [List of tooling](guides/tooling.md)
+ - :cat2: [Sphinx setup instructions](guides/sphinx_setup.md)
+ - :memo: [AWS Glue Features](guides/AWS_Glue_Features.md)
+ - :guardsman: [AWS TF Permissions](guides/aws_tf_permissions.md)
 
 
 ## Contributing to data-101
