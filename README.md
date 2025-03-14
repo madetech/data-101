@@ -48,6 +48,7 @@ To expand upon the core learning modules please check out the learning objective
  - :cat2: [Sphinx setup instructions](guides/sphinx_setup.md)
  - :memo: [AWS Glue Features](guides/AWS_Glue_Features.md)
  - :guardsman: [AWS TF Permissions](guides/aws_tf_permissions.md)
+ - :bookmark: [Poetry with Pyenv](guides/pyenv.md) 
 
 
 ## Contributing to data-101
