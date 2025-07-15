@@ -207,11 +207,17 @@ $ pip3 freeze -> requirements.txt
 ```
 
 # Installing PySpark
-To install PySpark you will first need to install java. We have found jdk@8 most compatible with spark.
+To install PySpark you will first need to install java. We have found jdk@8 most compatible with older versions of spark but to run spark 14 you can download jdk@17.
 
 ```
-$ brew install openjdk@8
+$ brew install openjdk@{version_number}
 ```
+Ensure that you have the correct JAVA version in your path of your shell by setting JAVA_HOME and can verify by typing in:
+
+```
+$ java-version
+```
+Then there are a couple of ways to have pyspark running. You can use brew to install apache-spark or install spark binaries on your compute, which will include pyspark. Alternatively you can download pyspark as a pip install.   
 More information can be found [here](https://spark.apache.org/docs/latest/api/python/getting_started/install.html), however you can then simply run the following command in your desired environment:
 ```
 $ pip3 install pyspark
@@ -223,6 +229,19 @@ $ pip3 install pyspark[sql]
 # pandas API on Spark
 $ pip3 install pyspark[pandas_on_spark] plotly  # to plot your data, you can install plotly together.
 ```
+An error that occured for some users when setting up the environment, was that 'Can't assign requested address: Service 'sparkDriver'' this is due to the fact the binding address hasn't been set. To solve this issue you can set the environment variable:
+```
+export SPARK_LOCAL_IP="127.0.0.1"
+```
+You can do this either in the terminal or in the load-spark-env.sh in the spark/bin directory. You can also change the spark.driver.bindAddress when setting up the SparkConf:
+```
+val spark: SparkSession = SparkSession.builder()
+    .appName("SparkByExamples.com")
+    .master("local[*]")
+    .config("spark.driver.bindAddress", "127.0.0.1")
+    .getOrCreate()
+```
+
 
 ## Delta Tables
 If you are working with Databricks then you may have to work with Delta Tables. Then to run up locally you will need to set your PySpark version to ‘3.1.0’ and install on pipfile: 
